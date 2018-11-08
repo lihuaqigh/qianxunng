@@ -13,6 +13,7 @@
 		3E528E802190A59A00916EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E528E7F2190A59A00916EE7 /* Assets.xcassets */; };
 		3E528E832190A59A00916EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E528E812190A59A00916EE7 /* LaunchScreen.storyboard */; };
 		3E528E862190A59A00916EE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E528E852190A59A00916EE7 /* main.m */; };
+		3EB871AD21949997004BDFE3 /* QXTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871AC21949997004BDFE3 /* QXTwoViewController.m */; };
 		3F2846644FB66E6220D068DC /* libPods-qianxunng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224DFF5D7941349AACCCBBF /* libPods-qianxunng.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,8 @@
 		3E528E822190A59A00916EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E528E842190A59A00916EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E528E852190A59A00916EE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3EB871AB21949997004BDFE3 /* QXTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QXTwoViewController.h; sourceTree = "<group>"; };
+		3EB871AC21949997004BDFE3 /* QXTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXTwoViewController.m; sourceTree = "<group>"; };
 		B124F48898189F82A31BD20D /* Pods-qianxunng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qianxunng.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qianxunng/Pods-qianxunng.debug.xcconfig"; sourceTree = "<group>"; };
 		CCDD84313BF1F3412A74E191 /* Pods-qianxunng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qianxunng.release.xcconfig"; path = "Pods/Target Support Files/Pods-qianxunng/Pods-qianxunng.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +89,8 @@
 				3E528E772190A59A00916EE7 /* AppDelegate.m */,
 				3E528E792190A59A00916EE7 /* ViewController.h */,
 				3E528E7A2190A59A00916EE7 /* ViewController.m */,
+				3EB871AB21949997004BDFE3 /* QXTwoViewController.h */,
+				3EB871AC21949997004BDFE3 /* QXTwoViewController.m */,
 				3E528E7C2190A59A00916EE7 /* Main.storyboard */,
 				3E528E7F2190A59A00916EE7 /* Assets.xcassets */,
 				3E528E812190A59A00916EE7 /* LaunchScreen.storyboard */,
@@ -168,15 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-qianxunng-checkManifestLockResult.txt",
 			);
@@ -194,6 +195,7 @@
 			files = (
 				3E528E7B2190A59A00916EE7 /* ViewController.m in Sources */,
 				3E528E862190A59A00916EE7 /* main.m in Sources */,
+				3EB871AD21949997004BDFE3 /* QXTwoViewController.m in Sources */,
 				3E528E782190A59A00916EE7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "QXTwoViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    [self.navigationController pushViewController:[QXTwoViewController new] animated:YES];
 }
 
 
