@@ -6,9 +6,9 @@
 //  Copyright © 2018年 HQ. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "QXBaseController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : QXBaseController
 
 
 @end

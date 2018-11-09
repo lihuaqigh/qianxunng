@@ -14,6 +14,9 @@
 		3E528E832190A59A00916EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E528E812190A59A00916EE7 /* LaunchScreen.storyboard */; };
 		3E528E862190A59A00916EE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E528E852190A59A00916EE7 /* main.m */; };
 		3EB871AD21949997004BDFE3 /* QXTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871AC21949997004BDFE3 /* QXTwoViewController.m */; };
+		3EB871B121949D40004BDFE3 /* QXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871B021949D40004BDFE3 /* QXNavigationController.m */; };
+		3EB871B421949D67004BDFE3 /* QXBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871B321949D67004BDFE3 /* QXBaseController.m */; };
+		3EB871B721949FE2004BDFE3 /* UINavigationController+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871B621949FE2004BDFE3 /* UINavigationController+Extend.m */; };
 		3F2846644FB66E6220D068DC /* libPods-qianxunng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224DFF5D7941349AACCCBBF /* libPods-qianxunng.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,12 @@
 		3E528E852190A59A00916EE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3EB871AB21949997004BDFE3 /* QXTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QXTwoViewController.h; sourceTree = "<group>"; };
 		3EB871AC21949997004BDFE3 /* QXTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXTwoViewController.m; sourceTree = "<group>"; };
+		3EB871AF21949D40004BDFE3 /* QXNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QXNavigationController.h; sourceTree = "<group>"; };
+		3EB871B021949D40004BDFE3 /* QXNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXNavigationController.m; sourceTree = "<group>"; };
+		3EB871B221949D67004BDFE3 /* QXBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QXBaseController.h; sourceTree = "<group>"; };
+		3EB871B321949D67004BDFE3 /* QXBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXBaseController.m; sourceTree = "<group>"; };
+		3EB871B521949FE2004BDFE3 /* UINavigationController+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Extend.h"; sourceTree = "<group>"; };
+		3EB871B621949FE2004BDFE3 /* UINavigationController+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Extend.m"; sourceTree = "<group>"; };
 		B124F48898189F82A31BD20D /* Pods-qianxunng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qianxunng.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qianxunng/Pods-qianxunng.debug.xcconfig"; sourceTree = "<group>"; };
 		CCDD84313BF1F3412A74E191 /* Pods-qianxunng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qianxunng.release.xcconfig"; path = "Pods/Target Support Files/Pods-qianxunng/Pods-qianxunng.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +94,7 @@
 		3E528E752190A59A00916EE7 /* qianxunng */ = {
 			isa = PBXGroup;
 			children = (
+				3EB871AE21949CD1004BDFE3 /* BaseController */,
 				3E528E762190A59A00916EE7 /* AppDelegate.h */,
 				3E528E772190A59A00916EE7 /* AppDelegate.m */,
 				3E528E792190A59A00916EE7 /* ViewController.h */,
@@ -98,6 +108,19 @@
 				3E528E852190A59A00916EE7 /* main.m */,
 			);
 			path = qianxunng;
+			sourceTree = "<group>";
+		};
+		3EB871AE21949CD1004BDFE3 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				3EB871AF21949D40004BDFE3 /* QXNavigationController.h */,
+				3EB871B021949D40004BDFE3 /* QXNavigationController.m */,
+				3EB871B521949FE2004BDFE3 /* UINavigationController+Extend.h */,
+				3EB871B621949FE2004BDFE3 /* UINavigationController+Extend.m */,
+				3EB871B221949D67004BDFE3 /* QXBaseController.h */,
+				3EB871B321949D67004BDFE3 /* QXBaseController.m */,
+			);
+			path = BaseController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +218,11 @@
 			files = (
 				3E528E7B2190A59A00916EE7 /* ViewController.m in Sources */,
 				3E528E862190A59A00916EE7 /* main.m in Sources */,
+				3EB871B121949D40004BDFE3 /* QXNavigationController.m in Sources */,
+				3EB871B721949FE2004BDFE3 /* UINavigationController+Extend.m in Sources */,
 				3EB871AD21949997004BDFE3 /* QXTwoViewController.m in Sources */,
 				3E528E782190A59A00916EE7 /* AppDelegate.m in Sources */,
+				3EB871B421949D67004BDFE3 /* QXBaseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
