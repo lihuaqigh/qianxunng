@@ -6,9 +6,9 @@
 //  Copyright © 2018年 HQ. All rights reserved.
 //
 
-#import "QXBaseController.h"
+#import "NGBaseController.h"
 
-@interface ViewController : QXBaseController
+@interface ViewController : NGBaseController
 
 
 @end

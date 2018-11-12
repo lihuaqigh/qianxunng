@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "QXNavigationController.h"
+#import "NGNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +23,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    QXNavigationController *nvc = [[QXNavigationController alloc] initWithRootViewController:[ViewController new]];
+    NGNavigationController *nvc = [[NGNavigationController alloc] initWithRootViewController:[ViewController new]];
     self.window.rootViewController = nvc;
     
     return YES;

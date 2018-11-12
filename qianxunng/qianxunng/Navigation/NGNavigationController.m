@@ -1,18 +1,18 @@
 //
-//  QXBaseController.m
+//  NGNavigationController.m
 //  qianxunng
 //
-//  Created by lihuaqi on 2018/11/9.
+//  Created by nangua on 2018/11/12.
 //  Copyright © 2018年 HQ. All rights reserved.
 //
 
-#import "QXBaseController.h"
+#import "NGNavigationController.h"
 
-@interface QXBaseController ()
+@interface NGNavigationController ()
 
 @end
 
-@implementation QXBaseController
+@implementation NGNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
