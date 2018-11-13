@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class UINavigationBar;
 @interface NGNavigationBar : UIView
-
+@property (nonatomic, copy) NSString *title;
 @end

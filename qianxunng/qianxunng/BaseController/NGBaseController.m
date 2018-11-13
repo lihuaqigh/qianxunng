@@ -10,31 +10,21 @@
 #import "NGNavigationBar.h"
 
 @interface NGBaseController ()
-
 @end
 
 @implementation NGBaseController
-- (NGNavigationBar *)navigationBar {
-    if (_navigationBar == nil) {
-        _navigationBar = [[NGNavigationBar alloc] init];
-    }
-    return _navigationBar;
-}
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.hidden = YES;
-    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.view addSubview:self.navigationBar];
-    
-    
-    
+
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

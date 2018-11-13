@@ -18,6 +18,7 @@
 		3F2846644FB66E6220D068DC /* libPods-qianxunng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224DFF5D7941349AACCCBBF /* libPods-qianxunng.a */; };
 		7B9EE6DA2199833C00C22EB1 /* NGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9EE6D92199833C00C22EB1 /* NGNavigationController.m */; };
 		7B9EE6DD2199837800C22EB1 /* NGBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9EE6DC2199837800C22EB1 /* NGBaseController.m */; };
+		7B9EE6E3219AA59D00C22EB1 /* UIViewController+Nav.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9EE6E2219AA59D00C22EB1 /* UIViewController+Nav.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		7B9EE6D92199833C00C22EB1 /* NGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGNavigationController.m; sourceTree = "<group>"; };
 		7B9EE6DB2199837800C22EB1 /* NGBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGBaseController.h; sourceTree = "<group>"; };
 		7B9EE6DC2199837800C22EB1 /* NGBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGBaseController.m; sourceTree = "<group>"; };
+		7B9EE6E1219AA59D00C22EB1 /* UIViewController+Nav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Nav.h"; sourceTree = "<group>"; };
+		7B9EE6E2219AA59D00C22EB1 /* UIViewController+Nav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Nav.m"; sourceTree = "<group>"; };
 		B124F48898189F82A31BD20D /* Pods-qianxunng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qianxunng.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qianxunng/Pods-qianxunng.debug.xcconfig"; sourceTree = "<group>"; };
 		CCDD84313BF1F3412A74E191 /* Pods-qianxunng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qianxunng.release.xcconfig"; path = "Pods/Target Support Files/Pods-qianxunng/Pods-qianxunng.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +130,8 @@
 				7B9EE6D92199833C00C22EB1 /* NGNavigationController.m */,
 				3EB871B82199EC0F004BDFE3 /* NGNavigationBar.h */,
 				3EB871B92199EC0F004BDFE3 /* NGNavigationBar.m */,
+				7B9EE6E1219AA59D00C22EB1 /* UIViewController+Nav.h */,
+				7B9EE6E2219AA59D00C22EB1 /* UIViewController+Nav.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				3E528E862190A59A00916EE7 /* main.m in Sources */,
 				3EB871AD21949997004BDFE3 /* QXTwoViewController.m in Sources */,
 				3E528E782190A59A00916EE7 /* AppDelegate.m in Sources */,
+				7B9EE6E3219AA59D00C22EB1 /* UIViewController+Nav.m in Sources */,
 				7B9EE6DD2199837800C22EB1 /* NGBaseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
