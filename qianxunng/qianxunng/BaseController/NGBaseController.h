@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIViewController+Nav.h"
+
+@class NGNavigationBar;
 
 @interface NGBaseController : UIViewController
+/// custom navigationBar
+@property (nonatomic, strong) NGNavigationBar *navigationBar;
 
 @end

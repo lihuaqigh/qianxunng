@@ -22,12 +22,6 @@
 @interface NGNavigationBar()
 
 @property (nonatomic, strong) UILabel     *titleLabel;
-@property (nonatomic, strong) UIView      *titleView;
-@property (nonatomic, strong) UIButton    *leftButton;
-@property (nonatomic, strong) UIButton    *rightButton;
-@property (nonatomic, strong) UIView      *bottomLine;
-@property (nonatomic, strong) UIView      *backgroundView;
-@property (nonatomic, strong) UIImageView *backgroundImageView;
 
 @end
 
@@ -43,15 +37,17 @@
 }
 
 - (void)setupViews {
-    self.backgroundColor = [UIColor colorWithRed:(arc4random() % 256)/255.0 green:(arc4random() % 256)/255.0 blue:(arc4random() % 256)/255.0 alpha:1];
+    self.backgroundColor = [UIColor whiteColor];
+    [self addSubview:self.backgroundImageView];
     [self addSubview:self.titleLabel];
-    
+    [self.backgroundImageView addSubview:self.shadowImageView];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
+    [self.backgroundImageView setFrame:CGRectMake(0, 0, kScreenWidth, kNavigationHeight)];
     [self.titleLabel setFrame:CGRectMake(0, kStatusBarHeight, kScreenWidth, kNavigationBarHeight)];
+    [self.shadowImageView setFrame:CGRectMake(0, kNavigationHeight - 0.5, kScreenWidth, 0.5)];
     
 }
 
@@ -61,7 +57,52 @@
     self.titleLabel.text = title;
 }
 
-#pragma mark - 懒加载
+- (void)setTitleView:(UIView *)titleView {
+    _titleView = titleView;
+}
+
+/// 左边按钮
+- (void)setLeftBarButtonItem:(UIButton *)leftBarButtonItem {
+    _leftBarButtonItem = leftBarButtonItem;
+    [self setLeftBarButtonItems:@[leftBarButtonItem]];
+}
+
+- (void)setLeftBarButtonItems:(NSArray<UIButton *> *)leftBarButtonItems {
+    _leftBarButtonItems = leftBarButtonItems;
+    [self setLeftBarButtonItems:leftBarButtonItems animated:YES];
+}
+
+- (void)setLeftBarButtonItems:(NSArray<UIButton *> *)items animated:(BOOL)animated {
+    
+}
+
+/// 右边按钮
+- (void)setRightBarButtonItem:(UIButton *)rightBarButtonItem {
+    _rightBarButtonItem = rightBarButtonItem;
+    [self setRightBarButtonItems:@[rightBarButtonItem]];
+}
+
+- (void)setRightBarButtonItems:(NSArray<UIButton *> *)rightBarButtonItems {
+    _rightBarButtonItems = rightBarButtonItems;
+    [self setRightBarButtonItems:rightBarButtonItems animated:YES];
+}
+
+- (void)setRightBarButtonItems:(NSArray<UIButton *> *)items animated:(BOOL)animated {
+    
+}
+
+
+
+#pragma mark - getter
+
+- (UIImageView *)backgroundImageView {
+    if (_backgroundImageView == nil) {
+        _backgroundImageView = [[UIImageView alloc] init];
+        _backgroundImageView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256.0)/256.0 green:arc4random_uniform(256.0)/256.0 blue:arc4random_uniform(256.0)/256.0 alpha:1];
+    }
+    return _backgroundImageView;
+}
+
 - (UILabel *)titleLabel {
     if (_titleLabel == nil) {
         _titleLabel = [[UILabel alloc] init];
@@ -70,5 +111,14 @@
         _titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _titleLabel;
+}
+
+- (UIImageView *)shadowImageView {
+    if (_shadowImageView == nil) {
+        _shadowImageView = [[UIImageView alloc] init];
+        _shadowImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        _shadowImageView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256.0)/256.0 green:arc4random_uniform(256.0)/256.0 blue:arc4random_uniform(256.0)/256.0 alpha:1];
+    }
+    return _shadowImageView;
 }
 @end
