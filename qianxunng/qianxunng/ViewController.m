@@ -18,7 +18,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    //self.title = @"标题";
+    
+    [self setupNavigationBar];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)setupNavigationBar {
+    self.title = @"标题";
+    
+    [self setBackButtonHidden:YES];
+    
+    self.navBarBackgroundAlpha = 0;
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

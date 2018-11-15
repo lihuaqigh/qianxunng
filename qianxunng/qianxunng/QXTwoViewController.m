@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.title = @"标题2";
 }
 
 - (void)didReceiveMemoryWarning {

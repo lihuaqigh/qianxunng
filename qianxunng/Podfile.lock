@@ -1,20 +1,32 @@
 PODS:
   - FDFullscreenPopGesture (1.1)
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.4.0)
+  - ReactiveObjC (3.1.0)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - FDFullscreenPopGesture (= 1.1)
+  - IGListKit (~> 3.4.0)
+  - ReactiveObjC
   - YYModel
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FDFullscreenPopGesture
+    - IGListKit
+    - ReactiveObjC
     - YYModel
 
 SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: a227eef7c4b4fc1db39c50814525af5f934caa4e
+PODFILE CHECKSUM: 9639abeedcd61927796c333e6acf703a3d67ca59
 
 COCOAPODS: 1.5.3

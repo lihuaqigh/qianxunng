@@ -2,4 +2,7 @@ platform :ios, '9.0'
 target 'qianxunng' do
 pod 'YYModel'
 pod 'FDFullscreenPopGesture', '1.1'
+pod 'ReactiveObjC'
+# IGListKit (A better UICollectionView)
+pod 'IGListKit', '~> 3.4.0'
 end

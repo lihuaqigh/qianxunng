@@ -14,4 +14,10 @@
 /// custom navigationBar
 @property (nonatomic, strong) NGNavigationBar *navigationBar;
 
+@property (nonatomic, assign) CGFloat navigationBarAlpha;
+
+@property (nonatomic, assign) CGFloat navBarBackgroundAlpha;
+
+@property (nonatomic, assign) BOOL backButtonHidden;
+
 @end

@@ -17,59 +17,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    //self.navigationController.navigationBar.hidden = YES;
-    
-    [self.view addSubview:self.navigationBar];
-    
-    
-    
-    UIButton *left1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [left1 setTitle:@"啦啦啦1😝" forState:UIControlStateNormal];
-    left1.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256.0)/256.0 green:arc4random_uniform(256.0)/256.0 blue:arc4random_uniform(256.0)/256.0 alpha:1];
-    
-    
-    UIButton *left2 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 100)];
-    [left2 setTitle:@"啦啦啦2😝" forState:UIControlStateNormal];
-    left2.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256.0)/256.0 green:arc4random_uniform(256.0)/256.0 blue:arc4random_uniform(256.0)/256.0 alpha:1];
-    
-    UIButton *left3 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 100)];
-    [left3 setTitle:@"啦啦啦3😝" forState:UIControlStateNormal];
-    left3.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256.0)/256.0 green:arc4random_uniform(256.0)/256.0 blue:arc4random_uniform(256.0)/256.0 alpha:1];
-    
-    UIBarButtonItem *leftR1 = [[UIBarButtonItem alloc] initWithCustomView:left1];;
-    UIBarButtonItem *leftR2 = [[UIBarButtonItem alloc] initWithCustomView:left2];;
-    
-    
-    UIButton *left = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
-    [left setTitle:@"啦啦啦😝" forState:UIControlStateNormal];
-    left.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256.0)/256.0 green:arc4random_uniform(256.0)/256.0 blue:arc4random_uniform(256.0)/256.0 alpha:1];
-    
-    UIButton *lefta = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 100)];
-    [lefta setTitle:@"啦啦啦a😝" forState:UIControlStateNormal];
-    lefta.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256.0)/256.0 green:arc4random_uniform(256.0)/256.0 blue:arc4random_uniform(256.0)/256.0 alpha:1];
-    UIBarButtonItem *leftR3 = [[UIBarButtonItem alloc] initWithCustomView:left];;
-    UIBarButtonItem *leftR4 = [[UIBarButtonItem alloc] initWithCustomView:lefta];;
-    
-    
-    self.navigationItem.leftBarButtonItems = @[leftR3,leftR1];
-//    self.navigationItem.rightBarButtonItems = @[leftR1];
-//    [self.navigationItem setLeftBarButtonItems:@[leftR2,leftR1] animated:NO];
-    
-//    [self.navigationItem setLeftBarButtonItem:leftR1 animated:NO];
-//
-//    //self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:left];
-//
-
-    
-//    UILabel *tt = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 500, 100)];
-//    tt.text = @"qwerr";
-//    tt.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256.0)/256.0 green:arc4random_uniform(256.0)/256.0 blue:arc4random_uniform(256.0)/256.0 alpha:1];
-//    self.navigationItem.titleView = tt;
+    [self navigationBarDefault];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    [self.view bringSubviewToFront:self.navigationBar];
+}
+
+- (void)navigationBarDefault {
+    self.navigationController.navigationBar.hidden = YES;
+    
+    [self.view addSubview:self.navigationBar];
+    
+    UIImage *backImage = [UIImage imageNamed:@"nav_back_arrow"];
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, backImage.size.width, backImage.size.height)];
+    [backButton setImage:backImage forState:UIControlStateNormal];
+    self.navigationBar.leftBarButtonItem = backButton;
+    
 }
 
 #pragma mark - getter/setter
@@ -80,10 +49,25 @@
     return _navigationBar;
 }
 
-//- (void)setTitle:(NSString *)title {
-//    [super setTitle:title];
-//    self.navigationBar.title = title;
-//}
+- (void)setTitle:(NSString *)title {
+    [super setTitle:title];
+    self.navigationBar.title = title;
+}
+
+- (void)setBackButtonHidden:(BOOL)backButtonHidden {
+    _backButtonHidden = backButtonHidden;
+    self.navigationBar.leftBarButtonItem.hidden = YES;
+}
+
+- (void)setNavigationBarAlpha:(CGFloat)navigationBarAlpha {
+    _navigationBarAlpha = navigationBarAlpha;
+    self.navigationBar.alpha = navigationBarAlpha;
+}
+
+- (void)setNavBarBackgroundAlpha:(CGFloat)navBarBackgroundAlpha {
+    _navBarBackgroundAlpha = navBarBackgroundAlpha;
+    self.navigationBar.backgroundImageView.alpha = navBarBackgroundAlpha;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
