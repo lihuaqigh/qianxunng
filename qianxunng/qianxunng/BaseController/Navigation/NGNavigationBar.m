@@ -7,17 +7,6 @@
 //
 
 #import "NGNavigationBar.h"
-
-/// 屏幕宽度
-#define kScreenWidth            [UIScreen mainScreen].bounds.size.width
-/// 是否是iPhoneX
-#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
-/// 状态栏高度
-#define kStatusBarHeight        (iPhoneX ? 44 : 20)
-/// 导航栏高度
-#define kNavigationBarHeight    44
-/// 展示的导航的高度（导航+状态栏）
-#define kNavigationHeight       (kStatusBarHeight + kNavigationBarHeight)
 /// 导航左右按钮的中间间隔
 static CGFloat const kBarButtonPadding = 0;
 

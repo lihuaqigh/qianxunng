@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     [self navigationBarDefault];
 }
 
@@ -37,7 +40,16 @@
     UIImage *backImage = [UIImage imageNamed:@"nav_back_arrow"];
     UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, backImage.size.width, backImage.size.height)];
     [backButton setImage:backImage forState:UIControlStateNormal];
+    
+    @weakify(self)
+    [[backButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        @strongify(self)
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+    
     self.navigationBar.leftBarButtonItem = backButton;
+    
+    
     
 }
 

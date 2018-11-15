@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
-#import "NGNavigationController.h"
+#import "NGTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -23,8 +22,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    NGNavigationController *nvc = [[NGNavigationController alloc] initWithRootViewController:[ViewController new]];
-    self.window.rootViewController = nvc;
+    NGTabBarController *tvc = [[NGTabBarController alloc] init];
+    self.window.rootViewController = tvc;
     
     return YES;
 }

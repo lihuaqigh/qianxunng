@@ -1,31 +1,23 @@
 //
-//  NGNavigationController.m
+//  NGSearchController.m
 //  qianxunng
 //
-//  Created by nangua on 2018/11/12.
+//  Created by lihuaqi on 2018/11/16.
 //  Copyright © 2018年 HQ. All rights reserved.
 //
 
-#import "NGNavigationController.h"
+#import "NGSearchController.h"
 
-@interface NGNavigationController ()
+@interface NGSearchController ()
 
 @end
 
-@implementation NGNavigationController
+@implementation NGSearchController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-
-}
-
-#pragma mark - 拦截所有的push进来的子控制器，设置隐藏底部的tabBar
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
