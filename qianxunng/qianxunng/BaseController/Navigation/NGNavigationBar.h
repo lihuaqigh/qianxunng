@@ -11,7 +11,7 @@
 @class UINavigationBar, UINavigationItem;
 
 /**
- NavigationBar
+ 仿UINavigationBar
  */
 @interface NGNavigationBar : UIView
 @property (nonatomic,assign) UIBarStyle barStyle;
@@ -19,12 +19,16 @@
 @property (nonatomic,strong) UIColor *barTintColor;
 @property (nonatomic, strong) UIImageView *backgroundImageView;
 @property (nonatomic, strong) UIImageView *shadowImageView;
-///
 
+/// 设置导航栏在垂直方向上平移多少距离
+- (void)ng_setTranslationY:(CGFloat)translationY;
+
+/// 获取当前导航栏在垂直方向上偏移了多少
+- (CGFloat)ng_getTranslationY;
 
 
 /**
- NavigationItem
+ 仿UINavigationItem
  */
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) UIView *titleView;
@@ -39,3 +43,5 @@
 - (void)setLeftBarButtonItem:(UIButton *)item animated:(BOOL)animated;
 - (void)setRightBarButtonItem:(UIButton *)item animated:(BOOL)animated;
 @end
+
+
