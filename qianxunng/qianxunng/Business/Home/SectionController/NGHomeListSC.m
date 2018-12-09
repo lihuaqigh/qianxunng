@@ -10,7 +10,7 @@
 
 @implementation NGHomeListSC
 - (NSInteger)numberOfItems {
-    return 10;
+    return 20;
 }
 
 - (CGSize)sizeForItemAtIndex:(NSInteger)index {

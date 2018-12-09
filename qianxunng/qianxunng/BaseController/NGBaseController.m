@@ -71,9 +71,9 @@
     self.navigationBar.leftBarButtonItem.hidden = YES;
 }
 
-- (void)setNavigationBarAlpha:(CGFloat)navigationBarAlpha {
-    _navigationBarAlpha = navigationBarAlpha;
-    self.navigationBar.alpha = navigationBarAlpha;
+- (void)setNavBarAlpha:(CGFloat)navBarAlpha {
+    _navBarAlpha = navBarAlpha;
+    self.navigationBar.alpha = navBarAlpha;
 }
 
 - (void)setNavBarBackgroundAlpha:(CGFloat)navBarBackgroundAlpha {

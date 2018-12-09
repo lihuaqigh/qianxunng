@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NGNavigationBar.h"
 
-@class NGNavigationBar;
+//@class NGNavigationBar;
 
 @interface NGBaseController : UIViewController
 /// custom navigationBar
 @property (nonatomic, strong) NGNavigationBar *navigationBar;
 
-@property (nonatomic, assign) CGFloat navigationBarAlpha;
+@property (nonatomic, assign) CGFloat navBarAlpha;
 
 @property (nonatomic, assign) CGFloat navBarBackgroundAlpha;
 

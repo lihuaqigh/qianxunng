@@ -21,5 +21,10 @@
 #define kNavigationBarHeight    44
 /// 展示的导航的高度（导航+状态栏）
 #define kNavigationHeight       (kStatusBarHeight + kNavigationBarHeight)
+/// 底部 tabbar 高度
+#define kTabBarHeight           (49 + (iPhoneX ? 34 : 0))
+/// 颜色
+#define RGB(x,y,z)              [UIColor colorWithRed:(x)/255.0 green:(y)/255.0 blue:(z)/255.0 alpha:1.0]
+#define RGBA(x,y,z,a)           [UIColor colorWithRed:(x)/255.0 green:(y)/255.0 blue:(z)/255.0 alpha:a]
 
 #endif /* NGMacro_h */

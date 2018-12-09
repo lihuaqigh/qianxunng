@@ -14,17 +14,14 @@
  仿UINavigationBar
  */
 @interface NGNavigationBar : UIView
-@property (nonatomic,assign) UIBarStyle barStyle;
-@property (nonatomic,strong) UIColor *tintColor;
-@property (nonatomic,strong) UIColor *barTintColor;
+@property (nonatomic, assign) UIBarStyle barStyle;
+@property (nonatomic, strong) UIColor *tintColor;
+@property (nonatomic, strong) UIColor *barTintColor;
 @property (nonatomic, strong) UIImageView *backgroundImageView;
 @property (nonatomic, strong) UIImageView *shadowImageView;
 
 /// 设置导航栏在垂直方向上平移多少距离
-- (void)ng_setTranslationY:(CGFloat)translationY;
-
-/// 获取当前导航栏在垂直方向上偏移了多少
-- (CGFloat)ng_getTranslationY;
+@property (nonatomic, assign) CGFloat translationY;
 
 
 /**

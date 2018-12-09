@@ -40,7 +40,7 @@ static CGFloat const kBarButtonPadding = 0;
     
 }
 
-#pragma mark - setter
+#pragma mark - setter/getter
 /// titleView
 - (void)setTitle:(NSString *)title {
     _title = title;
@@ -152,8 +152,15 @@ static CGFloat const kBarButtonPadding = 0;
     }];
 }
 
-#pragma mark - getter
+-(void)setTranslationY:(CGFloat)translationY {
+    self.transform = CGAffineTransformMakeTranslation(0, translationY);
+}
 
+- (CGFloat)translationY {
+    return self.transform.ty;;
+}
+
+#pragma mark -懒加载
 - (UIImageView *)backgroundImageView {
     if (_backgroundImageView == nil) {
         _backgroundImageView = [[UIImageView alloc] init];

@@ -3,6 +3,13 @@ target 'qianxunng' do
 pod 'YYModel'
 pod 'FDFullscreenPopGesture', '1.1'
 pod 'ReactiveObjC'
+pod 'Masonry', '~> 0.6.1'
+pod 'SDWebImage', '~> 4.0'
 # IGListKit (A better UICollectionView)
 pod 'IGListKit', '~> 3.4.0'
+
+# 分段选择器，慢了一步
+pod 'JXCategoryView'
+# 轮播图
+pod 'SDCycleScrollView','~> 1.75'
 end

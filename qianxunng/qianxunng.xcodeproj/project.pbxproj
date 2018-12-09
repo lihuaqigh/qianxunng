@@ -12,6 +12,10 @@
 		3E528E802190A59A00916EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E528E7F2190A59A00916EE7 /* Assets.xcassets */; };
 		3E528E832190A59A00916EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E528E812190A59A00916EE7 /* LaunchScreen.storyboard */; };
 		3E528E862190A59A00916EE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E528E852190A59A00916EE7 /* main.m */; };
+		3E8E6A6521BCFFC40023DE2C /* NGSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8E6A6421BCFFC40023DE2C /* NGSearchBar.m */; };
+		3E8E6A6821BD1CE80023DE2C /* UIFont+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8E6A6621BD1CE80023DE2C /* UIFont+Configuration.m */; };
+		3E8E6A6B21BD28550023DE2C /* NGSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8E6A6A21BD28550023DE2C /* NGSegmentControl.m */; };
+		3E8E6A6E21BD2D870023DE2C /* NGHomeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8E6A6D21BD2D870023DE2C /* NGHomeListController.m */; };
 		3EB871AD21949997004BDFE3 /* QXTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871AC21949997004BDFE3 /* QXTwoViewController.m */; };
 		3EB871BA2199EC0F004BDFE3 /* NGNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871B92199EC0F004BDFE3 /* NGNavigationBar.m */; };
 		3EB871BE219DD845004BDFE3 /* NGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871BD219DD845004BDFE3 /* NGTabBarController.m */; };
@@ -20,6 +24,8 @@
 		3EB871CB219DDD0C004BDFE3 /* NGMyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871CA219DDD0C004BDFE3 /* NGMyController.m */; };
 		3EB871CE219DDD34004BDFE3 /* NGHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871CD219DDD34004BDFE3 /* NGHomeController.m */; };
 		3EB871D3219DE755004BDFE3 /* NGHomeListSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871D2219DE755004BDFE3 /* NGHomeListSC.m */; };
+		3ED3B14821BD7EED001FD6AA /* NGHomeCycleAdsSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED3B14721BD7EED001FD6AA /* NGHomeCycleAdsSC.m */; };
+		3ED3B14C21BD7F8D001FD6AA /* NGCycleAdsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED3B14B21BD7F8D001FD6AA /* NGCycleAdsCell.m */; };
 		3F2846644FB66E6220D068DC /* libPods-qianxunng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224DFF5D7941349AACCCBBF /* libPods-qianxunng.a */; };
 		7B9EE6DA2199833C00C22EB1 /* NGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9EE6D92199833C00C22EB1 /* NGNavigationController.m */; };
 		7B9EE6DD2199837800C22EB1 /* NGBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9EE6DC2199837800C22EB1 /* NGBaseController.m */; };
@@ -36,6 +42,14 @@
 		3E528E822190A59A00916EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E528E842190A59A00916EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E528E852190A59A00916EE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E8E6A6321BCFFC40023DE2C /* NGSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGSearchBar.h; sourceTree = "<group>"; };
+		3E8E6A6421BCFFC40023DE2C /* NGSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGSearchBar.m; sourceTree = "<group>"; };
+		3E8E6A6621BD1CE80023DE2C /* UIFont+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Configuration.m"; sourceTree = "<group>"; };
+		3E8E6A6721BD1CE80023DE2C /* UIFont+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Configuration.h"; sourceTree = "<group>"; };
+		3E8E6A6921BD28550023DE2C /* NGSegmentControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGSegmentControl.h; sourceTree = "<group>"; };
+		3E8E6A6A21BD28550023DE2C /* NGSegmentControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGSegmentControl.m; sourceTree = "<group>"; };
+		3E8E6A6C21BD2D870023DE2C /* NGHomeListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGHomeListController.h; sourceTree = "<group>"; };
+		3E8E6A6D21BD2D870023DE2C /* NGHomeListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGHomeListController.m; sourceTree = "<group>"; };
 		3EB871AB21949997004BDFE3 /* QXTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QXTwoViewController.h; sourceTree = "<group>"; };
 		3EB871AC21949997004BDFE3 /* QXTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXTwoViewController.m; sourceTree = "<group>"; };
 		3EB871B82199EC0F004BDFE3 /* NGNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGNavigationBar.h; sourceTree = "<group>"; };
@@ -53,6 +67,10 @@
 		3EB871D1219DE755004BDFE3 /* NGHomeListSC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGHomeListSC.h; sourceTree = "<group>"; };
 		3EB871D2219DE755004BDFE3 /* NGHomeListSC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGHomeListSC.m; sourceTree = "<group>"; };
 		3EB871D4219DE9FC004BDFE3 /* NGMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGMacro.h; sourceTree = "<group>"; };
+		3ED3B14621BD7EED001FD6AA /* NGHomeCycleAdsSC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGHomeCycleAdsSC.h; sourceTree = "<group>"; };
+		3ED3B14721BD7EED001FD6AA /* NGHomeCycleAdsSC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGHomeCycleAdsSC.m; sourceTree = "<group>"; };
+		3ED3B14A21BD7F8D001FD6AA /* NGCycleAdsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGCycleAdsCell.h; sourceTree = "<group>"; };
+		3ED3B14B21BD7F8D001FD6AA /* NGCycleAdsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGCycleAdsCell.m; sourceTree = "<group>"; };
 		7B9EE6D82199833C00C22EB1 /* NGNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGNavigationController.h; sourceTree = "<group>"; };
 		7B9EE6D92199833C00C22EB1 /* NGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGNavigationController.m; sourceTree = "<group>"; };
 		7B9EE6DB2199837800C22EB1 /* NGBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGBaseController.h; sourceTree = "<group>"; };
@@ -117,6 +135,7 @@
 				7BCC3039219D50A30041E918 /* Category */,
 				7BCC3038219D50880041E918 /* AppDelegate */,
 				3EB871AE21949CD1004BDFE3 /* BaseController */,
+				3E8E6A6221BCFF8E0023DE2C /* BaseUI */,
 				3EB871C2219DDBD2004BDFE3 /* Business */,
 				3E528E7C2190A59A00916EE7 /* Main.storyboard */,
 				3E528E7F2190A59A00916EE7 /* Assets.xcassets */,
@@ -127,6 +146,17 @@
 				3EB871D4219DE9FC004BDFE3 /* NGMacro.h */,
 			);
 			path = qianxunng;
+			sourceTree = "<group>";
+		};
+		3E8E6A6221BCFF8E0023DE2C /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				3E8E6A6321BCFFC40023DE2C /* NGSearchBar.h */,
+				3E8E6A6421BCFFC40023DE2C /* NGSearchBar.m */,
+				3E8E6A6921BD28550023DE2C /* NGSegmentControl.h */,
+				3E8E6A6A21BD28550023DE2C /* NGSegmentControl.m */,
+			);
+			path = BaseUI;
 			sourceTree = "<group>";
 		};
 		3EB871AE21949CD1004BDFE3 /* BaseController */ = {
@@ -162,6 +192,7 @@
 		3EB871C3219DDC6C004BDFE3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3ED3B14921BD7F3C001FD6AA /* Cell */,
 				3EB871D0219DE6CC004BDFE3 /* SectionController */,
 				3EB871CF219DE6B9004BDFE3 /* ViewController */,
 			);
@@ -191,6 +222,8 @@
 			children = (
 				3EB871CC219DDD34004BDFE3 /* NGHomeController.h */,
 				3EB871CD219DDD34004BDFE3 /* NGHomeController.m */,
+				3E8E6A6C21BD2D870023DE2C /* NGHomeListController.h */,
+				3E8E6A6D21BD2D870023DE2C /* NGHomeListController.m */,
 				3EB871AB21949997004BDFE3 /* QXTwoViewController.h */,
 				3EB871AC21949997004BDFE3 /* QXTwoViewController.m */,
 			);
@@ -202,8 +235,19 @@
 			children = (
 				3EB871D1219DE755004BDFE3 /* NGHomeListSC.h */,
 				3EB871D2219DE755004BDFE3 /* NGHomeListSC.m */,
+				3ED3B14621BD7EED001FD6AA /* NGHomeCycleAdsSC.h */,
+				3ED3B14721BD7EED001FD6AA /* NGHomeCycleAdsSC.m */,
 			);
 			path = SectionController;
+			sourceTree = "<group>";
+		};
+		3ED3B14921BD7F3C001FD6AA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3ED3B14A21BD7F8D001FD6AA /* NGCycleAdsCell.h */,
+				3ED3B14B21BD7F8D001FD6AA /* NGCycleAdsCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		7B9EE6D72199830D00C22EB1 /* Navigation */ = {
@@ -229,6 +273,8 @@
 		7BCC3039219D50A30041E918 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				3E8E6A6721BD1CE80023DE2C /* UIFont+Configuration.h */,
+				3E8E6A6621BD1CE80023DE2C /* UIFont+Configuration.m */,
 				7BCC303A219D51AD0041E918 /* UIView+Extension.h */,
 				7BCC303B219D51AD0041E918 /* UIView+Extension.m */,
 				3EB871BF219DD9EB004BDFE3 /* UIImage+image.h */,
@@ -335,14 +381,20 @@
 				3EB871BA2199EC0F004BDFE3 /* NGNavigationBar.m in Sources */,
 				7B9EE6DA2199833C00C22EB1 /* NGNavigationController.m in Sources */,
 				3E528E862190A59A00916EE7 /* main.m in Sources */,
+				3ED3B14C21BD7F8D001FD6AA /* NGCycleAdsCell.m in Sources */,
 				3EB871AD21949997004BDFE3 /* QXTwoViewController.m in Sources */,
+				3E8E6A6B21BD28550023DE2C /* NGSegmentControl.m in Sources */,
 				3E528E782190A59A00916EE7 /* AppDelegate.m in Sources */,
+				3E8E6A6E21BD2D870023DE2C /* NGHomeListController.m in Sources */,
 				3EB871C1219DD9EB004BDFE3 /* UIImage+image.m in Sources */,
 				7BCC303C219D51AD0041E918 /* UIView+Extension.m in Sources */,
 				3EB871CB219DDD0C004BDFE3 /* NGMyController.m in Sources */,
 				3EB871CE219DDD34004BDFE3 /* NGHomeController.m in Sources */,
 				7B9EE6DD2199837800C22EB1 /* NGBaseController.m in Sources */,
+				3E8E6A6821BD1CE80023DE2C /* UIFont+Configuration.m in Sources */,
+				3E8E6A6521BCFFC40023DE2C /* NGSearchBar.m in Sources */,
 				3EB871D3219DE755004BDFE3 /* NGHomeListSC.m in Sources */,
+				3ED3B14821BD7EED001FD6AA /* NGHomeCycleAdsSC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
