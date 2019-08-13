@@ -67,6 +67,20 @@ static NSString *const kCycleAds = @"kCycleAds";
     return nil;
 }
 
+#pragma mark - JXCategoryListCollectionContentViewDelegate
+
+- (UIView *)listView {
+    return self.view;
+}
+
+- (void)listDidAppear {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)listDidDisappear {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

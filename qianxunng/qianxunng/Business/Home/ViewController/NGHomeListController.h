@@ -7,7 +7,8 @@
 //
 
 #import "NGBaseController.h"
+#import "JXCategoryListCollectionContainerView.h"
 
-@interface NGHomeListController : NGBaseController
-
+@interface NGHomeListController : NGBaseController <JXCategoryListCollectionContentViewDelegate>
+@property (nonatomic, strong) UINavigationController *naviController;
 @end

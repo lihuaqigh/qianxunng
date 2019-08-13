@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, JXCategoryTitleImageType) {
 
 @property (nonatomic, assign) JXCategoryTitleImageType imageType;
 
-@property (nonatomic, copy) void(^loadImageCallback)(UIImageView *imageView);
+@property (nonatomic, copy) void(^loadImageCallback)(UIImageView *imageView, NSURL *imageURL);
 
 @property (nonatomic, copy) NSString *imageName;    //加载bundle内的图片
 
@@ -35,7 +35,7 @@ typedef NS_ENUM(NSUInteger, JXCategoryTitleImageType) {
 
 @property (nonatomic, assign) CGFloat titleImageSpacing;    //titleLabel和ImageView的间距，默认5
 
-@property (nonatomic, assign) BOOL imageZoomEnabled;
+@property (nonatomic, assign, getter=isImageZoomEnabled) BOOL imageZoomEnabled;
 
 @property (nonatomic, assign) CGFloat imageZoomScale;
 

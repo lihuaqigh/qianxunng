@@ -5,7 +5,7 @@ PODS:
   - IGListKit/Default (3.4.0):
     - IGListKit/Diffing
   - IGListKit/Diffing (3.4.0)
-  - JXCategoryView (1.1.1)
+  - JXCategoryView (1.3.16)
   - Masonry (0.6.4)
   - ReactiveObjC (3.1.0)
   - SDCycleScrollView (1.75):
@@ -18,7 +18,7 @@ PODS:
 DEPENDENCIES:
   - FDFullscreenPopGesture (= 1.1)
   - IGListKit (~> 3.4.0)
-  - JXCategoryView
+  - JXCategoryView (~> 1.3.16)
   - Masonry (~> 0.6.1)
   - ReactiveObjC
   - SDCycleScrollView (~> 1.75)
@@ -39,13 +39,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
-  JXCategoryView: ff95fa1969519eee5344faac69c10a9cf0c59aea
+  JXCategoryView: 037618624e69d6e28c0388a7cfd9851ebf041793
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 6cec2a4da9c5e93df4361255ab5913ab931d4fd6
+PODFILE CHECKSUM: a98a6b95150259d05034b1098bf563827540f3c5
 
 COCOAPODS: 1.5.3

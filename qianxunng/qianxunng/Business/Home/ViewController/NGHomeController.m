@@ -10,17 +10,22 @@
 #import "QXTwoViewController.h"
 #import "NGSearchBar.h"
 #import "JXCategoryView.h"
+#import "JXCategoryListCollectionContainerView.h"
 #import "NGHomeListController.h"
 #import "NGSearchController.h"
 
 static NSString *const kHomeSubVCId = @"kHomeSubVCId";
 
-@interface NGHomeController () <UICollectionViewDataSource,UICollectionViewDelegate,JXCategoryViewDelegate>
-@property (nonatomic, strong) UICollectionView *collectionView;
+@interface NGHomeController ()
+<
+JXCategoryViewDelegate,
+JXCategoryListCollectionContainerViewDataSource
+>
+
 @property (nonatomic, strong) NSArray *dataSource;
-@property (nonatomic, strong) NSMutableArray *viewControllers;
 @property (nonatomic, strong) NGSearchBar *searchBar;
 @property (nonatomic, strong) JXCategoryTitleView *categoryView;
+@property (nonatomic, strong) JXCategoryListCollectionContainerView *listContainerView;
 @end
 
 @implementation NGHomeController
@@ -39,8 +44,6 @@ static NSString *const kHomeSubVCId = @"kHomeSubVCId";
     [self setupNavigationBar];
     
     [self setupViews];
-    
-    [self setupViewControllers];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -66,28 +69,11 @@ static NSString *const kHomeSubVCId = @"kHomeSubVCId";
 
 #pragma mark - subviews
 - (void)setupViews {
-    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
-    layout.itemSize = CGSizeMake(kScreenWidth, kScreenHeight);
-    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    layout.minimumLineSpacing = 0;
-    layout.minimumInteritemSpacing = 0;
-    layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero
-                                             collectionViewLayout:layout];
-    
-    _collectionView.backgroundColor = [UIColor whiteColor];
-    _collectionView.delegate = self;
-    _collectionView.dataSource = self;
-    _collectionView.pagingEnabled = YES;
-    _collectionView.bounces = NO;
-    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kHomeSubVCId];
-    
-    
     //1、初始化JXCategoryTitleView
-    self.categoryView = [[JXCategoryTitleView alloc] initWithFrame:CGRectMake(0, kNavigationHeight, kScreenWidth, 30)];
-    _categoryView.delegate = self;
-    _categoryView.titles = self.dataSource;
+    self.categoryView = [[JXCategoryTitleView alloc] init];
+    self.categoryView.delegate = self;
+    self.categoryView.titles = self.dataSource;
+    self.categoryView.contentScrollViewClickTransitionAnimationEnabled = NO;
     
     //2、添加并配置指示器
     //lineView
@@ -98,41 +84,22 @@ static NSString *const kHomeSubVCId = @"kHomeSubVCId";
     _categoryView.indicators = @[lineView];
     
     //3、绑定contentScrollView。self.scrollView的初始化细节参考源码。
-    _categoryView.contentScrollView = self.collectionView;
+    self.listContainerView = [[JXCategoryListCollectionContainerView alloc] initWithDataSource:self];
+    [self.view addSubview:self.listContainerView];
+    //关联cotentScrollView，关联之后才可以互相联动！！！
+    self.categoryView.contentScrollView = self.listContainerView.collectionView;
     
     
-    _collectionView.frame = CGRectMake(0, _categoryView.bottom, kScreenWidth, kScreenHeight);
     [self.view addSubview:self.categoryView];
-    [self.view addSubview:self.collectionView];
 }
 
-- (void)setupViewControllers {
-    [self.childViewControllers makeObjectsPerformSelector:@selector(removeFromParentViewController)];
-    
-    for (int i = 0; i < self.dataSource.count; i++) {
-        [self addChildViewController:[[NGHomeListController alloc] init]];
-    }
-    [self.collectionView reloadData];
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.categoryView.frame = CGRectMake(0, kNavigationHeight, kScreenWidth, 30);
+    self.listContainerView.frame = CGRectMake(0, kNavigationHeight + 30, self.view.bounds.size.width, self.view.bounds.size.height - (kNavigationHeight + 30));
 }
 
-#pragma mark -- UICollectionViewDataSource
-//定义展示的UICollectionViewCell的个数
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.childViewControllers.count;
-}
-//定义展示的Section的个数
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
-//每个UICollectionView展示的内容
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NGBaseController *vc = [self.childViewControllers objectAtIndex:indexPath.row];
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kHomeSubVCId forIndexPath:indexPath];
-    [cell.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    vc.view.frame = cell.contentView.bounds;
-    [cell.contentView addSubview:vc.view];
-    return cell;
-}
+
 
 #pragma mark - JXCategoryViewDelegate
 - (void)categoryView:(JXCategoryBaseView *)categoryView didClickSelectedItemAtIndex:(NSInteger)index {
@@ -141,6 +108,17 @@ static NSString *const kHomeSubVCId = @"kHomeSubVCId";
 
 - (void)categoryView:(JXCategoryBaseView *)categoryView didScrollSelectedItemAtIndex:(NSInteger)index {
     
+}
+
+#pragma mark - JXCategoryListCollectionContainerViewDataSource
+- (id<JXCategoryListCollectionContentViewDelegate>)listContainerView:(JXCategoryListContainerView *)listContainerView initListForIndex:(NSInteger)index {
+    NGHomeListController *listVC = [[NGHomeListController alloc] init];
+    listVC.naviController = self.navigationController;
+    return listVC;
+}
+
+- (NSInteger)numberOfListsInlistContainerView:(JXCategoryListContainerView *)listContainerView {
+    return self.dataSource.count;
 }
 
 - (void)didReceiveMemoryWarning {
