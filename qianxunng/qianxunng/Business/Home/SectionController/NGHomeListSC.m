@@ -7,20 +7,27 @@
 //
 
 #import "NGHomeListSC.h"
+#import "SQCouponSingleCell.h"
 
 @implementation NGHomeListSC
+
+- (instancetype)init {
+    if (self = [super init]) {
+        self.inset = UIEdgeInsetsMake(8, 0, 0, 0);
+    }
+    return self;
+}
+
 - (NSInteger)numberOfItems {
     return 20;
 }
 
 - (CGSize)sizeForItemAtIndex:(NSInteger)index {
-    const CGFloat width = self.collectionContext.containerSize.width;
-    return CGSizeMake(width, 80);
+    return CGSizeMake(kScreenWidth, 146);
 }
 
 - (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
-    UICollectionViewCell *cell = [self.collectionContext dequeueReusableCellOfClass:[UICollectionViewCell class] forSectionController:self atIndex:index];
-    cell.contentView.backgroundColor = [UIColor colorWithRed:(arc4random() % 256)/255.0 green:(arc4random() % 256)/255.0 blue:(arc4random() % 256)/255.0 alpha:1];
+    SQCouponSingleCell *cell = [self.collectionContext dequeueReusableCellOfClass:[SQCouponSingleCell class] forSectionController:self atIndex:index];
     return cell;
 }
 

@@ -7,16 +7,16 @@
 //
 
 #import "NGHomeListController.h"
+#import "NGHomeListViewModel.h"
 #import "NGHomeListSC.h"
 #import "NGHomeCycleAdsSC.h"
-
-static NSString *const kCycleAds = @"kCycleAds";
+#import "NGHomeMiniPictureSC.h"
 
 @interface NGHomeListController () <IGListAdapterDataSource>
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) IGListAdapter *adapter;
 @property (nonatomic, strong) NSArray *data;
-
+@property (nonatomic, strong) NGHomeListViewModel *homeListViewModel;
 @end
 
 @implementation NGHomeListController
@@ -25,6 +25,8 @@ static NSString *const kCycleAds = @"kCycleAds";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.homeListViewModel = [[NGHomeListViewModel alloc] init];
+    
     [self setupNavigationBar];
     
     [self setupViews];
@@ -52,12 +54,16 @@ static NSString *const kCycleAds = @"kCycleAds";
 
 #pragma mark - IGListAdapterDataSource
 - (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
-    return @[kCycleAds,@"1"];
+    return @[kHomeListAds, kHomeListJGQ, @(1)];
 }
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-    if (object == kCycleAds) {
-        return [NGHomeCycleAdsSC new];
+    if ([object isKindOfClass:[NSString class]]) {
+        if ([object isEqualToString:kHomeListAds]) {
+             return [NGHomeCycleAdsSC new];
+        } else {
+             return [NGHomeMiniPictureSC new];
+        }
     } else {
         return [NGHomeListSC new];
     }
