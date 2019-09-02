@@ -182,7 +182,7 @@ static CGFloat const kBarButtonPadding = 0;
     if (_shadowImageView == nil) {
         _shadowImageView = [[UIImageView alloc] init];
         _shadowImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        _shadowImageView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256.0)/256.0 green:arc4random_uniform(256.0)/256.0 blue:arc4random_uniform(256.0)/256.0 alpha:1];
+        _shadowImageView.backgroundColor = kLineColor;
     }
     return _shadowImageView;
 }

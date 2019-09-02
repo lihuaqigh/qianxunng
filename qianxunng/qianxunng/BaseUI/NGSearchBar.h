@@ -30,4 +30,5 @@ typedef NS_ENUM(NSInteger, NGSearchBarAlignment) {
 /// 搜索框是否能够编辑
 @property (nonatomic, assign) BOOL searchBarEditing;
 
+- (void)searchBarBecomeFirstResponder;
 @end

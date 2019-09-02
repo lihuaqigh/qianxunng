@@ -1,23 +1,21 @@
- //
-//  SQCouponSingleCell.m
-//  IGListDemo
 //
-//  Created by nangua on 2019/8/14.
-//Copyright © 2019 lhq. All rights reserved.
+//  NGCouponDoubleCell.m
+//  qianxunng
+//
+//  Created by lihuaqi on 2019/9/2.
+//  Copyright © 2019 HQ. All rights reserved.
 //
 
-
-#import "SQCouponSingleCell.h"
+#import "NGCouponDoubleCell.h"
 #import "SQBackgroundLabelView.h"
 
-@interface SQCouponSingleCell ()
+@interface NGCouponDoubleCell ()
 @property (nonatomic, strong) UIImageView *productImageView;
 @property (nonatomic, strong) UIImageView *vTagImgV;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *finalPreLabel;
 @property (nonatomic, strong) UILabel *finalPriceLabel;
 @property (nonatomic, strong) UILabel *salesLabel;
-@property (nonatomic, strong) UIView *lineView;
 /// 个性化描述label
 //@property (nonatomic, strong) UILabel *rankDescLabel;
 /// 券
@@ -27,7 +25,7 @@
 @end
 
 
-@implementation SQCouponSingleCell
+@implementation NGCouponDoubleCell
 
 
 #pragma mark - ********************** View Lifecycle **********************
@@ -46,12 +44,6 @@
     return self;
 }
 
-- (void)dealloc {
-    // 一定要关注这个函数是否被执行了！！！
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-
 #pragma mark - ********************** Init All Views **********************
 
 - (void)initVariable {
@@ -60,64 +52,60 @@
 
 - (void)setupViews {
     self.contentView.backgroundColor = [UIColor whiteColor];
+    self.contentView.layer.masksToBounds = YES;
+    self.contentView.layer.cornerRadius = 7;
+    
     [self.contentView addSubview:self.productImageView];
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.finalPreLabel];
     [self.contentView addSubview:self.finalPriceLabel];
     [self.contentView addSubview:self.salesLabel];
-    [self.contentView addSubview:self.lineView];
     [self.contentView addSubview:self.redLabel];
     [self.contentView addSubview:self.whiteLabel];
     
     //
+    CGFloat cellW = (kScreenWidth - 20 - 7) / 2.0;
     CGFloat padding = 10;
     // 券和返利
-    CGFloat trY = 80, trH = 17;
+    CGFloat trBottom = 33, trH = 17;
     
     [self.productImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(0);
-        make.left.mas_equalTo(12);
-        make.size.mas_equalTo(CGSizeMake(130, 130));
+        make.left.mas_equalTo(0);
+        make.size.mas_equalTo(CGSizeMake(cellW, cellW));
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.productImageView.mas_top).mas_equalTo(2);
-        make.left.mas_equalTo(self.productImageView.mas_right).mas_equalTo(padding);
+        make.top.mas_equalTo(self.productImageView.mas_bottom).mas_equalTo(8);
+        make.left.mas_equalTo(self.contentView.mas_left).mas_equalTo(padding);
         make.right.mas_equalTo(self.contentView.mas_right).mas_equalTo(-padding);
     }];
     
     [self.finalPreLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(self.productImageView.mas_bottom).mas_equalTo(-1);
-        make.left.mas_equalTo(self.productImageView.mas_right).mas_equalTo(padding);
+        make.bottom.mas_equalTo(self.contentView.mas_bottom).mas_equalTo(-7);
+        make.left.mas_equalTo(self.contentView.mas_left).mas_equalTo(padding);
     }];
-    
+
     [self.finalPriceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.mas_equalTo(self.finalPreLabel.mas_bottom).mas_equalTo(3);
         make.left.mas_equalTo(self.finalPreLabel.mas_right).mas_equalTo(0);
     }];
-    
+
     [self.salesLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.mas_equalTo(self.finalPreLabel.mas_bottom).mas_equalTo(-1);
-        make.left.mas_equalTo(self.finalPriceLabel.mas_right).mas_equalTo(5);
+        make.right.mas_equalTo(self.contentView.mas_right).mas_equalTo(-10);
     }];
-    
+
     [self.redLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.productImageView.mas_top).mas_equalTo(trY);
-        make.left.mas_equalTo(self.productImageView.mas_right).mas_equalTo(padding);
+        make.bottom.mas_equalTo(self.contentView.mas_bottom).mas_equalTo(-trBottom);
+        make.left.mas_equalTo(self.contentView.mas_left).mas_equalTo(padding);
         make.height.mas_equalTo(trH);
     }];
-    
+
     [self.whiteLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.redLabel.mas_top);
         make.left.mas_equalTo(self.redLabel.mas_right).mas_equalTo(4);
         make.height.mas_equalTo(self.redLabel.mas_height);
-    }];
-    
-    [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.productImageView.mas_bottom).mas_equalTo(8);
-        make.left.mas_equalTo(self.productImageView.mas_right).mas_equalTo(padding);
-        make.right.mas_equalTo(self.contentView.mas_right);
-        make.height.mas_equalTo(.5);
     }];
 }
 
@@ -188,8 +176,6 @@
         _productImageView = [[UIImageView alloc] init];
         _productImageView.contentMode = UIViewContentModeScaleAspectFill;
         _productImageView.backgroundColor = [UIColor lightGrayColor];
-        _productImageView.layer.masksToBounds = YES;
-        _productImageView.layer.cornerRadius = 5;
     }
     return _productImageView;
 }
@@ -197,7 +183,7 @@
 - (UILabel *)titleLabel {
     if (_titleLabel == nil) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.numberOfLines = 2;
+        _titleLabel.numberOfLines = 1;
         _titleLabel.font = [UIFont ng_regularFontOfSize:14];
         _titleLabel.textColor = kTitleColor;
     }
@@ -230,14 +216,6 @@
         _salesLabel.font = [UIFont ng_regularFontOfSize:12];
     }
     return _salesLabel;
-}
-
-- (UIView *)lineView {
-    if (!_lineView) {
-        _lineView = [[UIView alloc] init];
-        _lineView.backgroundColor = kLineColor;
-    }
-    return _lineView;
 }
 
 - (SQBackgroundLabelView *)redLabel {

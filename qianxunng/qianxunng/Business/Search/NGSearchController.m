@@ -19,6 +19,15 @@
 
 @implementation NGSearchController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.searchBar searchBarBecomeFirstResponder];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -26,6 +35,7 @@
     
     [self setupViews];
 }
+
 
 - (void)setupNavigationBar {
     [self setBackButtonHidden:YES];
@@ -37,7 +47,7 @@
 - (void)setupViews {
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero
                                              collectionViewLayout:[UICollectionViewFlowLayout new]];
-    self.collectionView.backgroundColor = [UIColor orangeColor];
+    self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.collectionView];
     self.adapter = [[IGListAdapter alloc] initWithUpdater:[[IGListAdapterUpdater alloc] init]
                                            viewController:self];
@@ -83,7 +93,6 @@
     
     [self.collectionView setFrame:CGRectMake(0, (1- progress) * kNavigationHeight, kScreenWidth, kScreenHeight)];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

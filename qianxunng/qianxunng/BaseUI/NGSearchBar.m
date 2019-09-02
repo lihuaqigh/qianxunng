@@ -71,6 +71,10 @@
     
 }
 
+- (void)searchBarBecomeFirstResponder {
+    [self.textField becomeFirstResponder];
+}
+
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
     if (_searchBarEditing) {
         return YES;

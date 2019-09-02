@@ -1,5 +1,5 @@
 //
-//  SQCouponSingleCell.h
+//  NGCouponSingleCell.h
 //  IGListDemo
 //
 //  Created by nangua on 2019/8/14.
@@ -7,7 +7,7 @@
 //
 
 
-@interface SQCouponSingleCell : UICollectionViewCell
+@interface NGCouponSingleCell : UICollectionViewCell
 
 
 @end

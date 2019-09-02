@@ -24,6 +24,9 @@ static NSString *const kAnimationKey = @"kAnimationKey";
     
     if (self.navigationController) {
         
+        viewController.hidesBottomBarWhenPushed = YES;
+
+        
         self.navigationController.delegate = transitionManager;
         
         objc_setAssociatedObject(viewController, &kAnimationKey, transitionManager, OBJC_ASSOCIATION_RETAIN_NONATOMIC);

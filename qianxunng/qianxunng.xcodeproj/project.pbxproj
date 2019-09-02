@@ -31,10 +31,13 @@
 		3EE1FAC423047FCF009AE678 /* NGMiniPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1FAC223047FCF009AE678 /* NGMiniPictureView.m */; };
 		3EE1FAD523048135009AE678 /* NGTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1FAC623048135009AE678 /* NGTransitionManager.m */; };
 		3EE1FAD623048135009AE678 /* UIViewController+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1FAC723048135009AE678 /* UIViewController+Transition.m */; };
-		3EE1FAD723048135009AE678 /* SQCouponSingleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1FAC823048135009AE678 /* SQCouponSingleCell.m */; };
+		3EE1FAD723048135009AE678 /* NGCouponSingleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1FAC823048135009AE678 /* NGCouponSingleCell.m */; };
 		3EE1FAD823048135009AE678 /* SQBackgroundLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1FACA23048135009AE678 /* SQBackgroundLabelView.m */; };
 		3EE1FADA23048135009AE678 /* NGFadeTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1FAD023048135009AE678 /* NGFadeTransitionAnimation.m */; };
 		3EE1FADB23048135009AE678 /* NGTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1FAD223048135009AE678 /* NGTransitionAnimation.m */; };
+		3EEDFD38231D68D5007C7633 /* NGCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD37231D68D5007C7633 /* NGCategoryController.m */; };
+		3EEDFD3B231D69F7007C7633 /* NGDoubleListSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD3A231D69F7007C7633 /* NGDoubleListSC.m */; };
+		3EEDFD3E231D6AFD007C7633 /* NGCouponDoubleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD3D231D6AFD007C7633 /* NGCouponDoubleCell.m */; };
 		3F2846644FB66E6220D068DC /* libPods-qianxunng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224DFF5D7941349AACCCBBF /* libPods-qianxunng.a */; };
 		7B9EE6DA2199833C00C22EB1 /* NGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9EE6D92199833C00C22EB1 /* NGNavigationController.m */; };
 		7B9EE6DD2199837800C22EB1 /* NGBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9EE6DC2199837800C22EB1 /* NGBaseController.m */; };
@@ -88,7 +91,7 @@
 		3EE1FAC323047FCF009AE678 /* NGMiniPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGMiniPictureView.h; sourceTree = "<group>"; };
 		3EE1FAC623048135009AE678 /* NGTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTransitionManager.m; sourceTree = "<group>"; };
 		3EE1FAC723048135009AE678 /* UIViewController+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Transition.m"; sourceTree = "<group>"; };
-		3EE1FAC823048135009AE678 /* SQCouponSingleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQCouponSingleCell.m; sourceTree = "<group>"; };
+		3EE1FAC823048135009AE678 /* NGCouponSingleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGCouponSingleCell.m; sourceTree = "<group>"; };
 		3EE1FAC923048135009AE678 /* NGTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTransitionAnimation.h; sourceTree = "<group>"; };
 		3EE1FACA23048135009AE678 /* SQBackgroundLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQBackgroundLabelView.m; sourceTree = "<group>"; };
 		3EE1FACC23048135009AE678 /* NGTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTransitionManager.h; sourceTree = "<group>"; };
@@ -97,7 +100,13 @@
 		3EE1FAD023048135009AE678 /* NGFadeTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGFadeTransitionAnimation.m; sourceTree = "<group>"; };
 		3EE1FAD123048135009AE678 /* SQBackgroundLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBackgroundLabelView.h; sourceTree = "<group>"; };
 		3EE1FAD223048135009AE678 /* NGTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTransitionAnimation.m; sourceTree = "<group>"; };
-		3EE1FAD323048135009AE678 /* SQCouponSingleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQCouponSingleCell.h; sourceTree = "<group>"; };
+		3EE1FAD323048135009AE678 /* NGCouponSingleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGCouponSingleCell.h; sourceTree = "<group>"; };
+		3EEDFD36231D68D5007C7633 /* NGCategoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGCategoryController.h; sourceTree = "<group>"; };
+		3EEDFD37231D68D5007C7633 /* NGCategoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGCategoryController.m; sourceTree = "<group>"; };
+		3EEDFD39231D69F7007C7633 /* NGDoubleListSC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGDoubleListSC.h; sourceTree = "<group>"; };
+		3EEDFD3A231D69F7007C7633 /* NGDoubleListSC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGDoubleListSC.m; sourceTree = "<group>"; };
+		3EEDFD3C231D6AFD007C7633 /* NGCouponDoubleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGCouponDoubleCell.h; sourceTree = "<group>"; };
+		3EEDFD3D231D6AFD007C7633 /* NGCouponDoubleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGCouponDoubleCell.m; sourceTree = "<group>"; };
 		7B9EE6D82199833C00C22EB1 /* NGNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGNavigationController.h; sourceTree = "<group>"; };
 		7B9EE6D92199833C00C22EB1 /* NGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGNavigationController.m; sourceTree = "<group>"; };
 		7B9EE6DB2199837800C22EB1 /* NGBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGBaseController.h; sourceTree = "<group>"; };
@@ -254,6 +263,8 @@
 				3EB871CD219DDD34004BDFE3 /* NGHomeController.m */,
 				3E8E6A6C21BD2D870023DE2C /* NGHomeListController.h */,
 				3E8E6A6D21BD2D870023DE2C /* NGHomeListController.m */,
+				3EEDFD36231D68D5007C7633 /* NGCategoryController.h */,
+				3EEDFD37231D68D5007C7633 /* NGCategoryController.m */,
 				3EB871AB21949997004BDFE3 /* QXTwoViewController.h */,
 				3EB871AC21949997004BDFE3 /* QXTwoViewController.m */,
 			);
@@ -269,6 +280,8 @@
 				3EE1FAC023047F5C009AE678 /* NGHomeMiniPictureSC.m */,
 				3EB871D1219DE755004BDFE3 /* NGHomeListSC.h */,
 				3EB871D2219DE755004BDFE3 /* NGHomeListSC.m */,
+				3EEDFD39231D69F7007C7633 /* NGDoubleListSC.h */,
+				3EEDFD3A231D69F7007C7633 /* NGDoubleListSC.m */,
 			);
 			path = SectionController;
 			sourceTree = "<group>";
@@ -285,8 +298,10 @@
 		3EE1FABA230322B5009AE678 /* BusinessComonUI */ = {
 			isa = PBXGroup;
 			children = (
-				3EE1FAD323048135009AE678 /* SQCouponSingleCell.h */,
-				3EE1FAC823048135009AE678 /* SQCouponSingleCell.m */,
+				3EE1FAD323048135009AE678 /* NGCouponSingleCell.h */,
+				3EE1FAC823048135009AE678 /* NGCouponSingleCell.m */,
+				3EEDFD3C231D6AFD007C7633 /* NGCouponDoubleCell.h */,
+				3EEDFD3D231D6AFD007C7633 /* NGCouponDoubleCell.m */,
 				3EE1FAD123048135009AE678 /* SQBackgroundLabelView.h */,
 				3EE1FACA23048135009AE678 /* SQBackgroundLabelView.m */,
 				3EE1FAC323047FCF009AE678 /* NGMiniPictureView.h */,
@@ -470,22 +485,25 @@
 				3E528E862190A59A00916EE7 /* main.m in Sources */,
 				3EE1FAD823048135009AE678 /* SQBackgroundLabelView.m in Sources */,
 				3ED3B14C21BD7F8D001FD6AA /* NGCycleAdsCell.m in Sources */,
+				3EEDFD3B231D69F7007C7633 /* NGDoubleListSC.m in Sources */,
 				3EE1FABE23047D56009AE678 /* NGHomeListViewModel.m in Sources */,
 				3EB871AD21949997004BDFE3 /* QXTwoViewController.m in Sources */,
 				3EE1FAC423047FCF009AE678 /* NGMiniPictureView.m in Sources */,
 				3E8E6A6B21BD28550023DE2C /* NGSegmentControl.m in Sources */,
+				3EEDFD38231D68D5007C7633 /* NGCategoryController.m in Sources */,
 				3EE1FADA23048135009AE678 /* NGFadeTransitionAnimation.m in Sources */,
 				3E528E782190A59A00916EE7 /* AppDelegate.m in Sources */,
 				3E8E6A6E21BD2D870023DE2C /* NGHomeListController.m in Sources */,
 				3EB871C1219DD9EB004BDFE3 /* UIImage+image.m in Sources */,
 				7BCC303C219D51AD0041E918 /* UIView+Extension.m in Sources */,
 				3EB871CB219DDD0C004BDFE3 /* NGMyController.m in Sources */,
+				3EEDFD3E231D6AFD007C7633 /* NGCouponDoubleCell.m in Sources */,
 				3EB871CE219DDD34004BDFE3 /* NGHomeController.m in Sources */,
 				7B9EE6DD2199837800C22EB1 /* NGBaseController.m in Sources */,
 				3EE1FAD623048135009AE678 /* UIViewController+Transition.m in Sources */,
 				3E8E6A6821BD1CE80023DE2C /* UIFont+Configuration.m in Sources */,
 				3E8E6A6521BCFFC40023DE2C /* NGSearchBar.m in Sources */,
-				3EE1FAD723048135009AE678 /* SQCouponSingleCell.m in Sources */,
+				3EE1FAD723048135009AE678 /* NGCouponSingleCell.m in Sources */,
 				3EE1FADB23048135009AE678 /* NGTransitionAnimation.m in Sources */,
 				3EB871D3219DE755004BDFE3 /* NGHomeListSC.m in Sources */,
 				3ED3B14821BD7EED001FD6AA /* NGHomeCycleAdsSC.m in Sources */,

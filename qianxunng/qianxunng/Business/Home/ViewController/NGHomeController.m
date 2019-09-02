@@ -12,7 +12,10 @@
 #import "JXCategoryView.h"
 #import "JXCategoryListCollectionContainerView.h"
 #import "NGHomeListController.h"
+#import "NGCategoryController.h"
 #import "NGSearchController.h"
+#import "NGFadeTransitionAnimation.h"
+#import "UIViewController+Transition.h"
 
 static NSString *const kHomeSubVCId = @"kHomeSubVCId";
 
@@ -61,7 +64,13 @@ JXCategoryListCollectionContainerViewDataSource
     @weakify(self)
     [[tap rac_gestureSignal] subscribeNext:^(id x) {
         @strongify(self)
-        [self.navigationController pushViewController:[[NGSearchController alloc] init] animated:YES];
+        NGSearchController *vc = [[NGSearchController alloc] init];
+
+        NGFadeTransitionAnimation *fadeTransitionAnimation = [[NGFadeTransitionAnimation alloc] init];
+        [self ng_pushViewControler:vc withAnimation:fadeTransitionAnimation];
+        
+//        [self.navigationController pushViewController:vc animated:YES];
+        
     }];
     [_searchBar addGestureRecognizer:tap];
     self.navigationBar.titleView = _searchBar;
@@ -112,9 +121,18 @@ JXCategoryListCollectionContainerViewDataSource
 
 #pragma mark - JXCategoryListCollectionContainerViewDataSource
 - (id<JXCategoryListCollectionContentViewDelegate>)listContainerView:(JXCategoryListContainerView *)listContainerView initListForIndex:(NSInteger)index {
-    NGHomeListController *listVC = [[NGHomeListController alloc] init];
-    listVC.naviController = self.navigationController;
-    return listVC;
+    if (index == 0) {
+        NGHomeListController *homeListVC = [[NGHomeListController alloc] init];
+        homeListVC.naviController = self.navigationController;
+        return homeListVC;
+    } else {
+        NGCategoryController *categoryVC = [[NGCategoryController alloc] init];
+        categoryVC.naviController = self.navigationController;
+        return categoryVC;
+    }
+    
+    
+    
 }
 
 - (NSInteger)numberOfListsInlistContainerView:(JXCategoryListContainerView *)listContainerView {

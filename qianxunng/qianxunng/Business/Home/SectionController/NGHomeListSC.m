@@ -7,7 +7,7 @@
 //
 
 #import "NGHomeListSC.h"
-#import "SQCouponSingleCell.h"
+#import "NGCouponSingleCell.h"
 
 @implementation NGHomeListSC
 
@@ -27,7 +27,7 @@
 }
 
 - (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
-    SQCouponSingleCell *cell = [self.collectionContext dequeueReusableCellOfClass:[SQCouponSingleCell class] forSectionController:self atIndex:index];
+    NGCouponSingleCell *cell = [self.collectionContext dequeueReusableCellOfClass:[NGCouponSingleCell class] forSectionController:self atIndex:index];
     return cell;
 }
 
