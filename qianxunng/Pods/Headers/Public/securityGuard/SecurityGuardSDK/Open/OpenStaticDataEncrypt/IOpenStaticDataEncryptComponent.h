@@ -1,0 +1,1 @@
+../../../../../../securityGuard/SecurityGuardSDK.framework/Headers/Open/OpenStaticDataEncrypt/IOpenStaticDataEncryptComponent.h

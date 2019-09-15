@@ -14,6 +14,47 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Alibaba-Inc copyright</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>AliAuthSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Alibaba-INC copyright</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>AliLinkPartnerSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Alibaba-INC copyright</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>AlibcTradeSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Alibaba-INC copyright
+</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>BCUserTrack</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>The MIT License (MIT)
 
 Copyright (c) 2015 
@@ -227,6 +268,17 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Alibaba-INC copyright
+</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>UTDID</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>The MIT License (MIT)
 
 Copyright (c) 2015 ibireme &lt;ibireme@gmail.com&gt;
@@ -254,6 +306,26 @@ SOFTWARE.
 			<string>MIT</string>
 			<key>Title</key>
 			<string>YYModel</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Alibaba-Inc copyright</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>mtopSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Alibaba-INC copyright</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>securityGuard</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

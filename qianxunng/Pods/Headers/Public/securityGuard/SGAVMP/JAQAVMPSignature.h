@@ -1,0 +1,1 @@
+../../../../securityGuard/SGAVMP.framework/Headers/JAQAVMPSignature.h

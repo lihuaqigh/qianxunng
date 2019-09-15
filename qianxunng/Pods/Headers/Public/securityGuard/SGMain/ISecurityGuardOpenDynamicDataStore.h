@@ -1,0 +1,1 @@
+../../../../securityGuard/SGMain.framework/Headers/ISecurityGuardOpenDynamicDataStore.h

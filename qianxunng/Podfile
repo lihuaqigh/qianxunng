@@ -1,3 +1,6 @@
+source 'http://repo.baichuan-ios.taobao.com/baichuanSDK/AliBCSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 platform :ios, '9.0'
 target 'qianxunng' do
 pod 'YYModel'
@@ -8,8 +11,17 @@ pod 'SDWebImage', '~> 4.0'
 # IGListKit (A better UICollectionView)
 pod 'IGListKit', '~> 3.4.0'
 
-# 分段选择器，慢了一步
+# 分段选择器
 pod 'JXCategoryView', '~> 1.3.16'
 # 轮播图
 pod 'SDCycleScrollView','~> 1.75'
+
+# 阿里百川
+pod 'AlibcTradeSDK','4.0.0.0'
+pod 'AliAuthSDK','2.0.0.0'
+pod 'mtopSDK','3.0.0.4'
+pod 'securityGuard','5.4.172'
+pod 'AliLinkPartnerSDK','2.0.0.0'
+pod 'BCUserTrack','5.2.0.1-appkeys'
+pod 'UTDID','1.1.0.16'
 end

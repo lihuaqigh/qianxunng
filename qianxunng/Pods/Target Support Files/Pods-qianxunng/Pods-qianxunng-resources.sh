@@ -91,6 +91,22 @@ EOM
       ;;
   esac
 }
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/AliLinkPartnerSDK/AlibcLinkPartnerSDK.framework/SmartLink.bundle"
+  install_resource "${PODS_ROOT}/AlibcTradeSDK/AlibcTradeBiz.framework/NBResource.bundle"
+  install_resource "${PODS_ROOT}/securityGuard/SGMiddleTier.framework/bx-cancel.png"
+  install_resource "${PODS_ROOT}/securityGuard/SGMiddleTier.framework/bx-cancel@2x.png"
+  install_resource "${PODS_ROOT}/securityGuard/SGMiddleTier.framework/bx-refresh.png"
+  install_resource "${PODS_ROOT}/securityGuard/SGMiddleTier.framework/bx-refresh@2x.png"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/AliLinkPartnerSDK/AlibcLinkPartnerSDK.framework/SmartLink.bundle"
+  install_resource "${PODS_ROOT}/AlibcTradeSDK/AlibcTradeBiz.framework/NBResource.bundle"
+  install_resource "${PODS_ROOT}/securityGuard/SGMiddleTier.framework/bx-cancel.png"
+  install_resource "${PODS_ROOT}/securityGuard/SGMiddleTier.framework/bx-cancel@2x.png"
+  install_resource "${PODS_ROOT}/securityGuard/SGMiddleTier.framework/bx-refresh.png"
+  install_resource "${PODS_ROOT}/securityGuard/SGMiddleTier.framework/bx-refresh@2x.png"
+fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

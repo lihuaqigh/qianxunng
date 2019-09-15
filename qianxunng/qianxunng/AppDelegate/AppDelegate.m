@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+ALBC.h"
+#import <AlibcTradeSDK/AlibcTradeSDK.h>
 #import "NGTabBarController.h"
 
 @interface AppDelegate ()
@@ -18,6 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self initALBCServiceWithApplication:application didFinishLaunchingWithOptions:launchOptions];
+    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -53,6 +58,37 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark -  handleOpenURL
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return YES;
+}
+
+// iOS 7&8
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    if (![[AlibcTradeSDK sharedInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation]) {
+        // Fallback on earlier versions
+    }
+    return YES;
+}
+
+
+// iOS 9&9+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options {
+    
+    if (@available(iOS 9.0, *)) {
+        if (![[AlibcTradeSDK sharedInstance] application:application openURL:url options:options]) {
+            // Fallback on earlier versions
+        }
+    } else {
+        // Fallback on earlier versions
+    }
+    return YES;
 }
 
 
