@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+ALBC.h"
-#import <AlibcTradeSDK/AlibcTradeSDK.h>
 #import "NGTabBarController.h"
 
 @interface AppDelegate ()

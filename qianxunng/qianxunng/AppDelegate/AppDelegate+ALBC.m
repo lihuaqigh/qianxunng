@@ -7,11 +7,15 @@
 //
 
 #import "AppDelegate+ALBC.h"
-#import <AlibcTradeSDK/AlibcTradeSDK.h>
 
 @implementation AppDelegate (ALBC)
 - (void)initALBCServiceWithApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [[AlibcTradeSDK sharedInstance] setDebugLogOpen:YES];
+    [[AlibcTradeSDK sharedInstance] setDebugLogOpen:NO];
+    
+    [[AlibcTradeSDK sharedInstance] setIsvVersion:@"1.0.0"];
+    
+    [[AlibcTradeSDK sharedInstance] setIsvAppName:@"baichuanDemo"];
+    
     [[AlibcTradeSDK sharedInstance] asyncInitWithSuccess:^{
         NSLog(@"百川初始化成功！");
     } failure:^(NSError *error) {

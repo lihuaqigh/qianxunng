@@ -28,9 +28,9 @@
 - (void)setupAllChildVc {
     [self addChildVcWithName:@"NGHomeController" title:@"首页" image:[UIImage imageNamed:@"tabbar_home"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_home_select"]];
     
-    [self addChildVcWithName:@"NGSearchController" title:@"分类" image:[UIImage imageNamed:@"tabbar_discver"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_discver_select"]];
+    [self addChildVcWithName:@"NGCategoryController" title:@"分类" image:[UIImage imageNamed:@"tabbar_discver"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_discver_select"]];
     
-    [self addChildVcWithName:@"NGSearchController" title:@"每日一赚" image:[UIImage imageNamed:@"tabbar_discver"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_discver_select"]];
+    [self addChildVcWithName:@"NGCategoryController" title:@"每日一赚" image:[UIImage imageNamed:@"tabbar_discver"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_discver_select"]];
     
     [self addChildVcWithName:@"NGMyController" title:@"我的" image:[UIImage imageNamed:@"tabbar_my"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_my_select"]];
 }

@@ -33,4 +33,20 @@
 
 - (void)didUpdateToObject:(id)object {
 }
+
+-(void)didSelectItemAtIndex:(NSInteger)index {
+    
+}
+
+- (void)OpenPageByNewWay:(id<AlibcTradePage>)page BizCode:(NSString *)bizCode{
+    AlibcTradeShowParams* showParam = [[AlibcTradeShowParams alloc] init];
+    showParam.openType = 0;
+    //    showParam.backUrl=@"tbopen23082328:https://h5.m.taobao.com";
+    showParam.nativeFailMode=1;
+    
+    [AlibcTradeSDK sharedInstance];
+    
+//    [[AlibcTradeSDK sharedInstance];
+    
+}
 @end

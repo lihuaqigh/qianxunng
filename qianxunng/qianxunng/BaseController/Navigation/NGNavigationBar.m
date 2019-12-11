@@ -28,7 +28,7 @@ static CGFloat const kBarButtonPadding = 0;
 }
 
 - (void)setupViews {
-    self.backgroundColor = [UIColor whiteColor];
+    self.backgroundColor = [UIColor clearColor];
     [self addSubview:self.backgroundImageView];
     [self.backgroundImageView addSubview:self.shadowImageView];
 }
@@ -174,6 +174,7 @@ static CGFloat const kBarButtonPadding = 0;
         _titleLabel.font = [UIFont systemFontOfSize:16];
         _titleLabel.textColor = [UIColor blackColor];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.backgroundColor = [UIColor clearColor];
     }
     return _titleLabel;
 }

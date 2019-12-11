@@ -7,8 +7,12 @@
 //
 
 #import "NGMyController.h"
+#import "NGMyCenterHeadSC.h"
 
-@interface NGMyController ()
+@interface NGMyController () <IGListAdapterDataSource>
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) IGListAdapter *adapter;
+@property (nonatomic, strong) NSArray *data;
 
 @end
 
@@ -17,6 +21,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setupNavigationBar];
+    
+    [self setupViews];
+}
+
+- (void)setupNavigationBar {
+    [self setBackButtonHidden:YES];
+    self.navBarBackgroundAlpha = 0;
+    self.navigationBar.title = @"";
+}
+
+#pragma mark - subviews
+- (void)setupViews {
+    self.view.backgroundColor = kBackgroundColor;
+    
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero
+                                             collectionViewLayout:[UICollectionViewFlowLayout new]];
+    self.collectionView.backgroundColor = [UIColor clearColor];
+    self.adapter = [[IGListAdapter alloc] initWithUpdater:[[IGListAdapterUpdater alloc] init]
+                                           viewController:self];
+    
+    self.adapter.collectionView = self.collectionView;
+    self.adapter.dataSource = self;
+    self.collectionView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+    [self.view addSubview:self.collectionView];
+}
+
+#pragma mark - IGListAdapterDataSource
+- (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
+    return @[@(0)];
+}
+
+- (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
+    return [NGMyCenterHeadSC new];
+}
+
+- (UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
+    return nil;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -15,9 +15,24 @@
 #import "UIFont+Configuration.h"
 #import "NGMacro.h"
 
-#import <YYModel/YYModel.h>
-#import <ReactiveObjC/ReactiveObjC.h>
+// 百川
+#import <AlibabaAuthSDK/ALBBSDK.h>
+#import <AlibabaAuthSDK/ALBBSession.h>
+#import <AlibcTradeSDK/AlibcTradeSDK.h>
+
+// UI
 #import <IGListKit/IGListKit.h>
 #import <Masonry.h>
+#import "UIImageView+WebCache.h"
+
+// model
+#import <YYModel/YYModel.h>
+#import "NGUser.h"
+
+// other
+#import <ReactiveObjC/ReactiveObjC.h>
+
+
+
 
 #endif /* PrefixHeader_pch */

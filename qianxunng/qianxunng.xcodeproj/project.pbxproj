@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E13DB05232EAC6700D91771 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E13DB04232EAC6700D91771 /* libz.tbd */; };
+		3E13DB07232EAC7E00D91771 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E13DB06232EAC7E00D91771 /* libsqlite3.tbd */; };
+		3E13DB09232EAC8B00D91771 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E13DB08232EAC8B00D91771 /* CoreTelephony.framework */; };
+		3E13DB0B232EAC9E00D91771 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E13DB0A232EAC9E00D91771 /* CoreMotion.framework */; };
 		3E528E782190A59A00916EE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E528E772190A59A00916EE7 /* AppDelegate.m */; };
 		3E528E7E2190A59A00916EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E528E7C2190A59A00916EE7 /* Main.storyboard */; };
 		3E528E802190A59A00916EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E528E7F2190A59A00916EE7 /* Assets.xcassets */; };
@@ -38,9 +42,12 @@
 		3EEDFD38231D68D5007C7633 /* NGCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD37231D68D5007C7633 /* NGCategoryController.m */; };
 		3EEDFD3B231D69F7007C7633 /* NGDoubleListSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD3A231D69F7007C7633 /* NGDoubleListSC.m */; };
 		3EEDFD3E231D6AFD007C7633 /* NGCouponDoubleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD3D231D6AFD007C7633 /* NGCouponDoubleCell.m */; };
-		3EEDFD40232E26E2007C7633 /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EEDFD3F232E26E1007C7633 /* yw_1222.jpg */; };
 		3EEDFD45232E284E007C7633 /* AppDelegate+ALBC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD44232E284E007C7633 /* AppDelegate+ALBC.m */; };
 		3EEDFD47232E2DCB007C7633 /* mtopsdk_configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EEDFD46232E2DCB007C7633 /* mtopsdk_configuration.plist */; };
+		3EEDFD4C232E99D6007C7633 /* NGMyCenterHeadSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD4B232E99D6007C7633 /* NGMyCenterHeadSC.m */; };
+		3EEDFD50232E9B38007C7633 /* NGMyCenterHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD4F232E9B38007C7633 /* NGMyCenterHeadCell.m */; };
+		3EEDFD55232E9F3D007C7633 /* NGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD54232E9F3D007C7633 /* NGUser.m */; };
+		3EFD963C232EBC2B00BE269F /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EFD963B232EBC2B00BE269F /* yw_1222.jpg */; };
 		3F2846644FB66E6220D068DC /* libPods-qianxunng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224DFF5D7941349AACCCBBF /* libPods-qianxunng.a */; };
 		7B9EE6DA2199833C00C22EB1 /* NGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9EE6D92199833C00C22EB1 /* NGNavigationController.m */; };
 		7B9EE6DD2199837800C22EB1 /* NGBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9EE6DC2199837800C22EB1 /* NGBaseController.m */; };
@@ -49,6 +56,10 @@
 
 /* Begin PBXFileReference section */
 		2224DFF5D7941349AACCCBBF /* libPods-qianxunng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qianxunng.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E13DB04232EAC6700D91771 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3E13DB06232EAC7E00D91771 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3E13DB08232EAC8B00D91771 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3E13DB0A232EAC9E00D91771 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		3E528E732190A59A00916EE7 /* qianxunng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qianxunng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E528E762190A59A00916EE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E528E772190A59A00916EE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,10 +121,16 @@
 		3EEDFD3A231D69F7007C7633 /* NGDoubleListSC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGDoubleListSC.m; sourceTree = "<group>"; };
 		3EEDFD3C231D6AFD007C7633 /* NGCouponDoubleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGCouponDoubleCell.h; sourceTree = "<group>"; };
 		3EEDFD3D231D6AFD007C7633 /* NGCouponDoubleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGCouponDoubleCell.m; sourceTree = "<group>"; };
-		3EEDFD3F232E26E1007C7633 /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
 		3EEDFD43232E284E007C7633 /* AppDelegate+ALBC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ALBC.h"; sourceTree = "<group>"; };
 		3EEDFD44232E284E007C7633 /* AppDelegate+ALBC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ALBC.m"; sourceTree = "<group>"; };
 		3EEDFD46232E2DCB007C7633 /* mtopsdk_configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = mtopsdk_configuration.plist; sourceTree = "<group>"; };
+		3EEDFD4A232E99D6007C7633 /* NGMyCenterHeadSC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGMyCenterHeadSC.h; sourceTree = "<group>"; };
+		3EEDFD4B232E99D6007C7633 /* NGMyCenterHeadSC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGMyCenterHeadSC.m; sourceTree = "<group>"; };
+		3EEDFD4E232E9B38007C7633 /* NGMyCenterHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGMyCenterHeadCell.h; sourceTree = "<group>"; };
+		3EEDFD4F232E9B38007C7633 /* NGMyCenterHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGMyCenterHeadCell.m; sourceTree = "<group>"; };
+		3EEDFD53232E9F3D007C7633 /* NGUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGUser.h; sourceTree = "<group>"; };
+		3EEDFD54232E9F3D007C7633 /* NGUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGUser.m; sourceTree = "<group>"; };
+		3EFD963B232EBC2B00BE269F /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
 		7B9EE6D82199833C00C22EB1 /* NGNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGNavigationController.h; sourceTree = "<group>"; };
 		7B9EE6D92199833C00C22EB1 /* NGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGNavigationController.m; sourceTree = "<group>"; };
 		7B9EE6DB2199837800C22EB1 /* NGBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGBaseController.h; sourceTree = "<group>"; };
@@ -130,6 +147,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E13DB0B232EAC9E00D91771 /* CoreMotion.framework in Frameworks */,
+				3E13DB09232EAC8B00D91771 /* CoreTelephony.framework in Frameworks */,
+				3E13DB07232EAC7E00D91771 /* libsqlite3.tbd in Frameworks */,
+				3E13DB05232EAC6700D91771 /* libz.tbd in Frameworks */,
 				3F2846644FB66E6220D068DC /* libPods-qianxunng.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +161,10 @@
 		24ED345CC45D26D96E4D4503 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E13DB0A232EAC9E00D91771 /* CoreMotion.framework */,
+				3E13DB08232EAC8B00D91771 /* CoreTelephony.framework */,
+				3E13DB06232EAC7E00D91771 /* libsqlite3.tbd */,
+				3E13DB04232EAC6700D91771 /* libz.tbd */,
 				2224DFF5D7941349AACCCBBF /* libPods-qianxunng.a */,
 			);
 			name = Frameworks;
@@ -157,6 +182,7 @@
 		3E528E6A2190A59900916EE7 = {
 			isa = PBXGroup;
 			children = (
+				3EFD963B232EBC2B00BE269F /* yw_1222.jpg */,
 				3E528E752190A59A00916EE7 /* qianxunng */,
 				3E528E742190A59A00916EE7 /* Products */,
 				28B46B99C0E008A011AB85B3 /* Pods */,
@@ -189,7 +215,6 @@
 				3E528E852190A59A00916EE7 /* main.m */,
 				7BCC303D219D64F40041E918 /* PrefixHeader.pch */,
 				3EB871D4219DE9FC004BDFE3 /* NGMacro.h */,
-				3EEDFD3F232E26E1007C7633 /* yw_1222.jpg */,
 				3EEDFD46232E2DCB007C7633 /* mtopsdk_configuration.plist */,
 			);
 			path = qianxunng;
@@ -229,6 +254,7 @@
 		3EB871C2219DDBD2004BDFE3 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				3EEDFD51232E9F26007C7633 /* Login */,
 				3EE1FABA230322B5009AE678 /* BusinessComonUI */,
 				3EB871C3219DDC6C004BDFE3 /* Home */,
 				3EB871C4219DDC80004BDFE3 /* Search */,
@@ -260,6 +286,7 @@
 		3EB871C5219DDC8A004BDFE3 /* My */ = {
 			isa = PBXGroup;
 			children = (
+				3EEDFD48232E998D007C7633 /* Center */,
 				3EB871C9219DDD0C004BDFE3 /* NGMyController.h */,
 				3EB871CA219DDD0C004BDFE3 /* NGMyController.m */,
 			);
@@ -375,6 +402,50 @@
 			path = ALBC;
 			sourceTree = "<group>";
 		};
+		3EEDFD48232E998D007C7633 /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				3EEDFD4D232E9B26007C7633 /* Cell */,
+				3EEDFD49232E9998007C7633 /* Section */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		3EEDFD49232E9998007C7633 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				3EEDFD4A232E99D6007C7633 /* NGMyCenterHeadSC.h */,
+				3EEDFD4B232E99D6007C7633 /* NGMyCenterHeadSC.m */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		3EEDFD4D232E9B26007C7633 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3EEDFD4E232E9B38007C7633 /* NGMyCenterHeadCell.h */,
+				3EEDFD4F232E9B38007C7633 /* NGMyCenterHeadCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3EEDFD51232E9F26007C7633 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3EEDFD52232E9F2E007C7633 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3EEDFD52232E9F2E007C7633 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3EEDFD53232E9F3D007C7633 /* NGUser.h */,
+				3EEDFD54232E9F3D007C7633 /* NGUser.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7B9EE6D72199830D00C22EB1 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,9 +541,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EEDFD40232E26E2007C7633 /* yw_1222.jpg in Resources */,
 				3E528E832190A59A00916EE7 /* LaunchScreen.storyboard in Resources */,
 				3E528E802190A59A00916EE7 /* Assets.xcassets in Resources */,
+				3EFD963C232EBC2B00BE269F /* yw_1222.jpg in Resources */,
 				3EEDFD47232E2DCB007C7633 /* mtopsdk_configuration.plist in Resources */,
 				3E528E7E2190A59A00916EE7 /* Main.storyboard in Resources */,
 			);
@@ -541,6 +612,8 @@
 				3EB871BE219DD845004BDFE3 /* NGTabBarController.m in Sources */,
 				3EE1FAD523048135009AE678 /* NGTransitionManager.m in Sources */,
 				3EB871C8219DDCFB004BDFE3 /* NGSearchController.m in Sources */,
+				3EEDFD50232E9B38007C7633 /* NGMyCenterHeadCell.m in Sources */,
+				3EEDFD55232E9F3D007C7633 /* NGUser.m in Sources */,
 				3EB871BA2199EC0F004BDFE3 /* NGNavigationBar.m in Sources */,
 				7B9EE6DA2199833C00C22EB1 /* NGNavigationController.m in Sources */,
 				3EE1FAC123047F5C009AE678 /* NGHomeMiniPictureSC.m in Sources */,
@@ -553,6 +626,7 @@
 				3EB871AD21949997004BDFE3 /* QXTwoViewController.m in Sources */,
 				3EE1FAC423047FCF009AE678 /* NGMiniPictureView.m in Sources */,
 				3E8E6A6B21BD28550023DE2C /* NGSegmentControl.m in Sources */,
+				3EEDFD4C232E99D6007C7633 /* NGMyCenterHeadSC.m in Sources */,
 				3EEDFD38231D68D5007C7633 /* NGCategoryController.m in Sources */,
 				3EE1FADA23048135009AE678 /* NGFadeTransitionAnimation.m in Sources */,
 				3E528E782190A59A00916EE7 /* AppDelegate.m in Sources */,
@@ -708,9 +782,80 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 865L62UDE9;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = qianxunng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"FDFullscreenPopGesture\"",
+					"-l\"IGListKit\"",
+					"-l\"JXCategoryView\"",
+					"-l\"Masonry\"",
+					"-l\"ReactiveObjC\"",
+					"-l\"SDCycleScrollView\"",
+					"-l\"SDWebImage\"",
+					"-l\"YYModel\"",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AlibabaAuthExt\"",
+					"-framework",
+					"\"AlibabaAuthSDK\"",
+					"-framework",
+					"\"AlibcLinkPartnerSDK\"",
+					"-framework",
+					"\"AlibcTradeBiz\"",
+					"-framework",
+					"\"AlibcTradeSDK\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MtopSDK\"",
+					"-framework",
+					"\"SGAVMP\"",
+					"-framework",
+					"\"SGMain\"",
+					"-framework",
+					"\"SGMiddleTier\"",
+					"-framework",
+					"\"SGSecurityBody\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SecurityGuardSDK\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UTDID\"",
+					"-framework",
+					"\"UTMini\"",
+					"-framework",
+					"\"mtopcoreopen\"",
+					"-framework",
+					"\"mtopext\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.ng.qianxunng;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -724,9 +869,80 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 865L62UDE9;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = qianxunng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"FDFullscreenPopGesture\"",
+					"-l\"IGListKit\"",
+					"-l\"JXCategoryView\"",
+					"-l\"Masonry\"",
+					"-l\"ReactiveObjC\"",
+					"-l\"SDCycleScrollView\"",
+					"-l\"SDWebImage\"",
+					"-l\"YYModel\"",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AlibabaAuthExt\"",
+					"-framework",
+					"\"AlibabaAuthSDK\"",
+					"-framework",
+					"\"AlibcLinkPartnerSDK\"",
+					"-framework",
+					"\"AlibcTradeBiz\"",
+					"-framework",
+					"\"AlibcTradeSDK\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MtopSDK\"",
+					"-framework",
+					"\"SGAVMP\"",
+					"-framework",
+					"\"SGMain\"",
+					"-framework",
+					"\"SGMiddleTier\"",
+					"-framework",
+					"\"SGSecurityBody\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SecurityGuardSDK\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UTDID\"",
+					"-framework",
+					"\"UTMini\"",
+					"-framework",
+					"\"mtopcoreopen\"",
+					"-framework",
+					"\"mtopext\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.ng.qianxunng;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
