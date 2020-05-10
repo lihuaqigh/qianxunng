@@ -14,7 +14,6 @@
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) IGListAdapter *adapter;
 @property (nonatomic, strong) NSArray *data;
-
 @end
 
 @implementation NGCenterController
@@ -24,7 +23,6 @@
     // Do any additional setup after loading the view.
     [self addNotif];
     [self setupNavigationBar];
-    
     [self setupViews];
 }
 

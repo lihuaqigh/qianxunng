@@ -16,6 +16,7 @@
 #import "NGSearchController.h"
 #import "NGFadeTransitionAnimation.h"
 #import "UIViewController+Transition.h"
+#import "NGHomeFeedRequest.h"
 
 static NSString *const kHomeSubVCId = @"kHomeSubVCId";
 
@@ -51,6 +52,13 @@ JXCategoryListCollectionContainerViewDataSource
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    NGHomeFeedRequest *req = [[NGHomeFeedRequest alloc] init];
+    [req startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        
+    }];
 }
 
 #pragma mark - navigationBar

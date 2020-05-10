@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3E0C7F6D23EAC0A400DC03B9 /* NGLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C7F6C23EAC0A400DC03B9 /* NGLoginManager.m */; };
 		3E0C7F732438790000DC03B9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C7F722438790000DC03B9 /* UIView+Frame.m */; };
+		3E0C7F772467ED2D00DC03B9 /* NGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C7F762467ED2D00DC03B9 /* NGRequest.m */; };
+		3E0C7F7A2467F27E00DC03B9 /* NGGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C7F792467F27E00DC03B9 /* NGGetRequest.m */; };
+		3E0C7F7D2467F82600DC03B9 /* NGHomeFeedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C7F7C2467F82600DC03B9 /* NGHomeFeedRequest.m */; };
+		3E0C7F812468025700DC03B9 /* NGPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C7F802468025700DC03B9 /* NGPostRequest.m */; };
 		3E13DB05232EAC6700D91771 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E13DB04232EAC6700D91771 /* libz.tbd */; };
 		3E13DB07232EAC7E00D91771 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E13DB06232EAC7E00D91771 /* libsqlite3.tbd */; };
 		3E13DB09232EAC8B00D91771 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E13DB08232EAC8B00D91771 /* CoreTelephony.framework */; };
@@ -61,6 +65,14 @@
 		3E0C7F6C23EAC0A400DC03B9 /* NGLoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGLoginManager.m; sourceTree = "<group>"; };
 		3E0C7F712438790000DC03B9 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		3E0C7F722438790000DC03B9 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		3E0C7F752467ED2D00DC03B9 /* NGRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGRequest.h; sourceTree = "<group>"; };
+		3E0C7F762467ED2D00DC03B9 /* NGRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGRequest.m; sourceTree = "<group>"; };
+		3E0C7F782467F27E00DC03B9 /* NGGetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGGetRequest.h; sourceTree = "<group>"; };
+		3E0C7F792467F27E00DC03B9 /* NGGetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGGetRequest.m; sourceTree = "<group>"; };
+		3E0C7F7B2467F82600DC03B9 /* NGHomeFeedRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGHomeFeedRequest.h; sourceTree = "<group>"; };
+		3E0C7F7C2467F82600DC03B9 /* NGHomeFeedRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGHomeFeedRequest.m; sourceTree = "<group>"; };
+		3E0C7F7F2468025700DC03B9 /* NGPostRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGPostRequest.h; sourceTree = "<group>"; };
+		3E0C7F802468025700DC03B9 /* NGPostRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGPostRequest.m; sourceTree = "<group>"; };
 		3E13DB04232EAC6700D91771 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3E13DB06232EAC7E00D91771 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		3E13DB08232EAC8B00D91771 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -207,6 +219,28 @@
 			path = Layout;
 			sourceTree = "<group>";
 		};
+		3E0C7F742467E80700DC03B9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C7F752467ED2D00DC03B9 /* NGRequest.h */,
+				3E0C7F762467ED2D00DC03B9 /* NGRequest.m */,
+				3E0C7F782467F27E00DC03B9 /* NGGetRequest.h */,
+				3E0C7F792467F27E00DC03B9 /* NGGetRequest.m */,
+				3E0C7F7F2468025700DC03B9 /* NGPostRequest.h */,
+				3E0C7F802468025700DC03B9 /* NGPostRequest.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3E0C7F7E2467F82F00DC03B9 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C7F7B2467F82600DC03B9 /* NGHomeFeedRequest.h */,
+				3E0C7F7C2467F82600DC03B9 /* NGHomeFeedRequest.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		3E528E6A2190A59900916EE7 = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +328,7 @@
 		3EB871C3219DDC6C004BDFE3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3E0C7F7E2467F82F00DC03B9 /* Api */,
 				3EE1FABB23047D2C009AE678 /* ViewModel */,
 				3ED3B14921BD7F3C001FD6AA /* Cell */,
 				3EB871D0219DE6CC004BDFE3 /* SectionController */,
@@ -417,6 +452,7 @@
 		3EEDFD41232E2783007C7633 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3E0C7F742467E80700DC03B9 /* Network */,
 				3EEDFD42232E27A1007C7633 /* ALBC */,
 			);
 			path = Service;
@@ -665,7 +701,9 @@
 				7BCC303C219D51AD0041E918 /* UIView+Extension.m in Sources */,
 				3EB871CB219DDD0C004BDFE3 /* NGCenterController.m in Sources */,
 				3EEDFD3E231D6AFD007C7633 /* NGCouponDoubleCell.m in Sources */,
+				3E0C7F7A2467F27E00DC03B9 /* NGGetRequest.m in Sources */,
 				3EB871CE219DDD34004BDFE3 /* NGHomeController.m in Sources */,
+				3E0C7F772467ED2D00DC03B9 /* NGRequest.m in Sources */,
 				7B9EE6DD2199837800C22EB1 /* NGBaseController.m in Sources */,
 				3EE1FAD623048135009AE678 /* UIViewController+Transition.m in Sources */,
 				3E8E6A6821BD1CE80023DE2C /* UIFont+Configuration.m in Sources */,
@@ -674,6 +712,8 @@
 				3EE1FADB23048135009AE678 /* NGTransitionAnimation.m in Sources */,
 				3EB871D3219DE755004BDFE3 /* NGHomeListSC.m in Sources */,
 				3ED3B14821BD7EED001FD6AA /* NGHomeCycleAdsSC.m in Sources */,
+				3E0C7F812468025700DC03B9 /* NGPostRequest.m in Sources */,
+				3E0C7F7D2467F82600DC03B9 /* NGHomeFeedRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
