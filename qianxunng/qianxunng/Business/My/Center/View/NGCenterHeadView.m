@@ -1,19 +1,19 @@
 //
-//  NGMyCenterHeadCell.m
+//  NGCenterHeadView.m
 //  qianxunng
 //
 //  Created by lihuaqi on 2019/9/16.
 //  Copyright © 2019 HQ. All rights reserved.
 //
 
-#import "NGMyCenterHeadCell.h"
+#import "NGCenterHeadView.h"
 
-@interface NGMyCenterHeadCell()
+@interface NGCenterHeadView()
 @property (nonatomic, strong) UIImageView *iconImgV;
 @property (nonatomic, strong) UILabel *nameLabel;
 @end
 
-@implementation NGMyCenterHeadCell
+@implementation NGCenterHeadView
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -23,10 +23,12 @@
 }
 
 - (void)setupViews {
-    self.backgroundColor = [UIColor whiteColor];
+    self.height = [NGCenterHeadView headHeight];
+    self.width = kScreenWidth;
+    self.backgroundColor = RGB(254, 230, 77);
     
-    [self.contentView addSubview:self.iconImgV];
-    [self.contentView addSubview:self.nameLabel];
+    [self addSubview:self.iconImgV];
+    [self addSubview:self.nameLabel];
     
     [self.iconImgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(10);
@@ -40,10 +42,33 @@
     }];
 }
 
-- (void)setModel:(NGUser *)model {
-    _model = model;
-    [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:model.icon]];
-    self.nameLabel.text = model.name;
+- (void)refreshUI {
+    @weakify(self)
+    [[NGLoginManager sharedManager] checkLoginStatusWithCompletion:^(BOOL success) {
+        @strongify(self)
+        if (success ) {
+            NGUser *user = [NGLoginManager sharedManager].user;
+            [self.iconImgV sd_setImageWithURL:[NSURL URLWithString:user.icon]];
+            self.nameLabel.text = user.name;
+        } else {
+            
+        }
+    }];
+    
+}
+
++ (CGFloat)headHeight1 {
+    CGFloat h1 = NGHeight812For2339(575);
+    return h1;
+}
+
++ (CGFloat)headHeight2 {
+    CGFloat h2 = NGHeight812For2339(175);
+    return h2;
+}
+
++ (CGFloat)headHeight {
+    return [self headHeight1] + [self headHeight2];
 }
 
 - (UIImageView *)iconImgV {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0C7F6D23EAC0A400DC03B9 /* NGLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C7F6C23EAC0A400DC03B9 /* NGLoginManager.m */; };
+		3E0C7F732438790000DC03B9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C7F722438790000DC03B9 /* UIView+Frame.m */; };
 		3E13DB05232EAC6700D91771 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E13DB04232EAC6700D91771 /* libz.tbd */; };
 		3E13DB07232EAC7E00D91771 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E13DB06232EAC7E00D91771 /* libsqlite3.tbd */; };
 		3E13DB09232EAC8B00D91771 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E13DB08232EAC8B00D91771 /* CoreTelephony.framework */; };
@@ -25,7 +27,7 @@
 		3EB871BE219DD845004BDFE3 /* NGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871BD219DD845004BDFE3 /* NGTabBarController.m */; };
 		3EB871C1219DD9EB004BDFE3 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871C0219DD9EB004BDFE3 /* UIImage+image.m */; };
 		3EB871C8219DDCFB004BDFE3 /* NGSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871C7219DDCFB004BDFE3 /* NGSearchController.m */; };
-		3EB871CB219DDD0C004BDFE3 /* NGMyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871CA219DDD0C004BDFE3 /* NGMyController.m */; };
+		3EB871CB219DDD0C004BDFE3 /* NGCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871CA219DDD0C004BDFE3 /* NGCenterController.m */; };
 		3EB871CE219DDD34004BDFE3 /* NGHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871CD219DDD34004BDFE3 /* NGHomeController.m */; };
 		3EB871D3219DE755004BDFE3 /* NGHomeListSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB871D2219DE755004BDFE3 /* NGHomeListSC.m */; };
 		3ED3B14821BD7EED001FD6AA /* NGHomeCycleAdsSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED3B14721BD7EED001FD6AA /* NGHomeCycleAdsSC.m */; };
@@ -44,8 +46,7 @@
 		3EEDFD3E231D6AFD007C7633 /* NGCouponDoubleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD3D231D6AFD007C7633 /* NGCouponDoubleCell.m */; };
 		3EEDFD45232E284E007C7633 /* AppDelegate+ALBC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD44232E284E007C7633 /* AppDelegate+ALBC.m */; };
 		3EEDFD47232E2DCB007C7633 /* mtopsdk_configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EEDFD46232E2DCB007C7633 /* mtopsdk_configuration.plist */; };
-		3EEDFD4C232E99D6007C7633 /* NGMyCenterHeadSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD4B232E99D6007C7633 /* NGMyCenterHeadSC.m */; };
-		3EEDFD50232E9B38007C7633 /* NGMyCenterHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD4F232E9B38007C7633 /* NGMyCenterHeadCell.m */; };
+		3EEDFD50232E9B38007C7633 /* NGCenterHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD4F232E9B38007C7633 /* NGCenterHeadView.m */; };
 		3EEDFD55232E9F3D007C7633 /* NGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDFD54232E9F3D007C7633 /* NGUser.m */; };
 		3EFD963C232EBC2B00BE269F /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EFD963B232EBC2B00BE269F /* yw_1222.jpg */; };
 		3F2846644FB66E6220D068DC /* libPods-qianxunng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2224DFF5D7941349AACCCBBF /* libPods-qianxunng.a */; };
@@ -56,6 +57,10 @@
 
 /* Begin PBXFileReference section */
 		2224DFF5D7941349AACCCBBF /* libPods-qianxunng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qianxunng.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E0C7F6B23EAC0A400DC03B9 /* NGLoginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGLoginManager.h; sourceTree = "<group>"; };
+		3E0C7F6C23EAC0A400DC03B9 /* NGLoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGLoginManager.m; sourceTree = "<group>"; };
+		3E0C7F712438790000DC03B9 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		3E0C7F722438790000DC03B9 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		3E13DB04232EAC6700D91771 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3E13DB06232EAC7E00D91771 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		3E13DB08232EAC8B00D91771 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -86,8 +91,8 @@
 		3EB871C0219DD9EB004BDFE3 /* UIImage+image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
 		3EB871C6219DDCFB004BDFE3 /* NGSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGSearchController.h; sourceTree = "<group>"; };
 		3EB871C7219DDCFB004BDFE3 /* NGSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGSearchController.m; sourceTree = "<group>"; };
-		3EB871C9219DDD0C004BDFE3 /* NGMyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGMyController.h; sourceTree = "<group>"; };
-		3EB871CA219DDD0C004BDFE3 /* NGMyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGMyController.m; sourceTree = "<group>"; };
+		3EB871C9219DDD0C004BDFE3 /* NGCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGCenterController.h; sourceTree = "<group>"; };
+		3EB871CA219DDD0C004BDFE3 /* NGCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGCenterController.m; sourceTree = "<group>"; };
 		3EB871CC219DDD34004BDFE3 /* NGHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGHomeController.h; sourceTree = "<group>"; };
 		3EB871CD219DDD34004BDFE3 /* NGHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGHomeController.m; sourceTree = "<group>"; };
 		3EB871D1219DE755004BDFE3 /* NGHomeListSC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGHomeListSC.h; sourceTree = "<group>"; };
@@ -124,10 +129,8 @@
 		3EEDFD43232E284E007C7633 /* AppDelegate+ALBC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ALBC.h"; sourceTree = "<group>"; };
 		3EEDFD44232E284E007C7633 /* AppDelegate+ALBC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ALBC.m"; sourceTree = "<group>"; };
 		3EEDFD46232E2DCB007C7633 /* mtopsdk_configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = mtopsdk_configuration.plist; sourceTree = "<group>"; };
-		3EEDFD4A232E99D6007C7633 /* NGMyCenterHeadSC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGMyCenterHeadSC.h; sourceTree = "<group>"; };
-		3EEDFD4B232E99D6007C7633 /* NGMyCenterHeadSC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGMyCenterHeadSC.m; sourceTree = "<group>"; };
-		3EEDFD4E232E9B38007C7633 /* NGMyCenterHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGMyCenterHeadCell.h; sourceTree = "<group>"; };
-		3EEDFD4F232E9B38007C7633 /* NGMyCenterHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGMyCenterHeadCell.m; sourceTree = "<group>"; };
+		3EEDFD4E232E9B38007C7633 /* NGCenterHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGCenterHeadView.h; sourceTree = "<group>"; };
+		3EEDFD4F232E9B38007C7633 /* NGCenterHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGCenterHeadView.m; sourceTree = "<group>"; };
 		3EEDFD53232E9F3D007C7633 /* NGUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGUser.h; sourceTree = "<group>"; };
 		3EEDFD54232E9F3D007C7633 /* NGUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGUser.m; sourceTree = "<group>"; };
 		3EFD963B232EBC2B00BE269F /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
@@ -177,6 +180,31 @@
 				CCDD84313BF1F3412A74E191 /* Pods-qianxunng.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3E0C7F6E24385F7A00DC03B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EB871C9219DDD0C004BDFE3 /* NGCenterController.h */,
+				3EB871CA219DDD0C004BDFE3 /* NGCenterController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E0C7F6F24385F8C00DC03B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E0C7F70243875BB00DC03B9 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C7F712438790000DC03B9 /* UIView+Frame.h */,
+				3E0C7F722438790000DC03B9 /* UIView+Frame.m */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		3E528E6A2190A59900916EE7 = {
@@ -287,8 +315,6 @@
 			isa = PBXGroup;
 			children = (
 				3EEDFD48232E998D007C7633 /* Center */,
-				3EB871C9219DDD0C004BDFE3 /* NGMyController.h */,
-				3EB871CA219DDD0C004BDFE3 /* NGMyController.m */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -382,6 +408,7 @@
 		3EE1FADC23048194009AE678 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				3E0C7F70243875BB00DC03B9 /* Layout */,
 				3EE1FAC523048135009AE678 /* Transition */,
 			);
 			path = Util;
@@ -405,7 +432,9 @@
 		3EEDFD48232E998D007C7633 /* Center */ = {
 			isa = PBXGroup;
 			children = (
-				3EEDFD4D232E9B26007C7633 /* Cell */,
+				3E0C7F6F24385F8C00DC03B9 /* Model */,
+				3E0C7F6E24385F7A00DC03B9 /* Controller */,
+				3EEDFD4D232E9B26007C7633 /* View */,
 				3EEDFD49232E9998007C7633 /* Section */,
 			);
 			path = Center;
@@ -414,19 +443,17 @@
 		3EEDFD49232E9998007C7633 /* Section */ = {
 			isa = PBXGroup;
 			children = (
-				3EEDFD4A232E99D6007C7633 /* NGMyCenterHeadSC.h */,
-				3EEDFD4B232E99D6007C7633 /* NGMyCenterHeadSC.m */,
 			);
 			path = Section;
 			sourceTree = "<group>";
 		};
-		3EEDFD4D232E9B26007C7633 /* Cell */ = {
+		3EEDFD4D232E9B26007C7633 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3EEDFD4E232E9B38007C7633 /* NGMyCenterHeadCell.h */,
-				3EEDFD4F232E9B38007C7633 /* NGMyCenterHeadCell.m */,
+				3EEDFD4E232E9B38007C7633 /* NGCenterHeadView.h */,
+				3EEDFD4F232E9B38007C7633 /* NGCenterHeadView.m */,
 			);
-			path = Cell;
+			path = View;
 			sourceTree = "<group>";
 		};
 		3EEDFD51232E9F26007C7633 /* Login */ = {
@@ -442,6 +469,8 @@
 			children = (
 				3EEDFD53232E9F3D007C7633 /* NGUser.h */,
 				3EEDFD54232E9F3D007C7633 /* NGUser.m */,
+				3E0C7F6B23EAC0A400DC03B9 /* NGLoginManager.h */,
+				3E0C7F6C23EAC0A400DC03B9 /* NGLoginManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -612,7 +641,7 @@
 				3EB871BE219DD845004BDFE3 /* NGTabBarController.m in Sources */,
 				3EE1FAD523048135009AE678 /* NGTransitionManager.m in Sources */,
 				3EB871C8219DDCFB004BDFE3 /* NGSearchController.m in Sources */,
-				3EEDFD50232E9B38007C7633 /* NGMyCenterHeadCell.m in Sources */,
+				3EEDFD50232E9B38007C7633 /* NGCenterHeadView.m in Sources */,
 				3EEDFD55232E9F3D007C7633 /* NGUser.m in Sources */,
 				3EB871BA2199EC0F004BDFE3 /* NGNavigationBar.m in Sources */,
 				7B9EE6DA2199833C00C22EB1 /* NGNavigationController.m in Sources */,
@@ -621,19 +650,20 @@
 				3E528E862190A59A00916EE7 /* main.m in Sources */,
 				3EE1FAD823048135009AE678 /* SQBackgroundLabelView.m in Sources */,
 				3ED3B14C21BD7F8D001FD6AA /* NGCycleAdsCell.m in Sources */,
+				3E0C7F732438790000DC03B9 /* UIView+Frame.m in Sources */,
+				3E0C7F6D23EAC0A400DC03B9 /* NGLoginManager.m in Sources */,
 				3EEDFD3B231D69F7007C7633 /* NGDoubleListSC.m in Sources */,
 				3EE1FABE23047D56009AE678 /* NGHomeListViewModel.m in Sources */,
 				3EB871AD21949997004BDFE3 /* QXTwoViewController.m in Sources */,
 				3EE1FAC423047FCF009AE678 /* NGMiniPictureView.m in Sources */,
 				3E8E6A6B21BD28550023DE2C /* NGSegmentControl.m in Sources */,
-				3EEDFD4C232E99D6007C7633 /* NGMyCenterHeadSC.m in Sources */,
 				3EEDFD38231D68D5007C7633 /* NGCategoryController.m in Sources */,
 				3EE1FADA23048135009AE678 /* NGFadeTransitionAnimation.m in Sources */,
 				3E528E782190A59A00916EE7 /* AppDelegate.m in Sources */,
 				3E8E6A6E21BD2D870023DE2C /* NGHomeListController.m in Sources */,
 				3EB871C1219DD9EB004BDFE3 /* UIImage+image.m in Sources */,
 				7BCC303C219D51AD0041E918 /* UIView+Extension.m in Sources */,
-				3EB871CB219DDD0C004BDFE3 /* NGMyController.m in Sources */,
+				3EB871CB219DDD0C004BDFE3 /* NGCenterController.m in Sources */,
 				3EEDFD3E231D6AFD007C7633 /* NGCouponDoubleCell.m in Sources */,
 				3EB871CE219DDD34004BDFE3 /* NGHomeController.m in Sources */,
 				7B9EE6DD2199837800C22EB1 /* NGBaseController.m in Sources */,
@@ -781,7 +811,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 865L62UDE9;
+				DEVELOPMENT_TEAM = HG953EV4JH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = qianxunng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -868,7 +898,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 865L62UDE9;
+				DEVELOPMENT_TEAM = HG953EV4JH;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = qianxunng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

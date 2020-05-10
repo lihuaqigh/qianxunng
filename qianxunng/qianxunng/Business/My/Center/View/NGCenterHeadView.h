@@ -1,5 +1,5 @@
 //
-//  NGMyCenterHeadCell.h
+//  NGCenterHeadView.h
 //  qianxunng
 //
 //  Created by lihuaqi on 2019/9/16.
@@ -10,8 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NGMyCenterHeadCell : UICollectionViewCell
-@property (nonatomic, strong) NGUser *model;
+@interface NGCenterHeadView : UIImageView
+- (void)refreshUI;
++ (CGFloat)headHeight;
 @end
 
 NS_ASSUME_NONNULL_END

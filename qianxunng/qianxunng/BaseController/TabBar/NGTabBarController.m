@@ -10,7 +10,7 @@
 #import "NGNavigationController.h"
 #import "NGHomeController.h"
 #import "NGSearchController.h"
-#import "NGMyController.h"
+#import "NGCenterController.h"
 #import "UIImage+image.h"
 
 @interface NGTabBarController ()
@@ -30,9 +30,9 @@
     
     [self addChildVcWithName:@"NGCategoryController" title:@"分类" image:[UIImage imageNamed:@"tabbar_discver"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_discver_select"]];
     
-    [self addChildVcWithName:@"NGCategoryController" title:@"每日一赚" image:[UIImage imageNamed:@"tabbar_discver"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_discver_select"]];
+    [self addChildVcWithName:@"NGCategoryController" title:@"收藏" image:[UIImage imageNamed:@"tabbar_discver"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_discver_select"]];
     
-    [self addChildVcWithName:@"NGMyController" title:@"我的" image:[UIImage imageNamed:@"tabbar_my"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_my_select"]];
+    [self addChildVcWithName:@"NGCenterController" title:@"我的" image:[UIImage imageNamed:@"tabbar_my"] selectedImage:[UIImage imageWithOriginalName:@"tabbar_my_select"]];
 }
 
 #pragma mark - 添加子控制器

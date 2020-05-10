@@ -23,12 +23,11 @@
 #define kNavigationHeight       (kStatusBarHeight + kNavigationBarHeight)
 /// 底部 tabbar 高度
 #define kTabBarHeight           (49 + (iPhoneX ? 34 : 0))
+
 /// 颜色
 #define RGB(x,y,z)              [UIColor colorWithRed:(x)/255.0 green:(y)/255.0 blue:(z)/255.0 alpha:1.0]
 #define RGBA(x,y,z,a)           [UIColor colorWithRed:(x)/255.0 green:(y)/255.0 blue:(z)/255.0 alpha:a]
-#define rgba(x,y,z,a)           [UIColor colorWithRed:(x)/255.0 green:(y)/255.0 blue:(z)/255.0 alpha:a]
 #define kTitleColor             RGB(6, 27, 40)
 #define kLineColor              RGB(143, 143, 143)
-#define kBackgroundColor        rgba(246, 246, 246, 1)
-
+#define kBackgroundColor        RGBA(246, 246, 246, 1)
 #endif /* NGMacro_h */

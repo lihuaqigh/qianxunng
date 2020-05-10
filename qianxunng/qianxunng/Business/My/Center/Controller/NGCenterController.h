@@ -1,5 +1,5 @@
 //
-//  NGMyController.h
+//  NGCenterController.h
 //  qianxunng
 //
 //  Created by lihuaqi on 2018/11/16.
@@ -8,6 +8,6 @@
 
 #import "NGBaseController.h"
 
-@interface NGMyController : NGBaseController
+@interface NGCenterController : NGBaseController
 
 @end

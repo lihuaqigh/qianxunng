@@ -12,6 +12,10 @@
 - (void)initALBCServiceWithApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[AlibcTradeSDK sharedInstance] setDebugLogOpen:NO];
     
+    [[ALBBSDK sharedInstance] setAppkey:@"25355811"];
+    
+    [[ALBBSDK sharedInstance] setAuthOption: NormalAuth];
+    
     [[AlibcTradeSDK sharedInstance] setIsvVersion:@"1.0.0"];
     
     [[AlibcTradeSDK sharedInstance] setIsvAppName:@"baichuanDemo"];

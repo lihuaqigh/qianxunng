@@ -24,10 +24,14 @@
 #import <IGListKit/IGListKit.h>
 #import <Masonry.h>
 #import "UIImageView+WebCache.h"
+#import "UIView+Frame.h"
 
 // model
 #import <YYModel/YYModel.h>
+
+// login
 #import "NGUser.h"
+#import "NGLoginManager.h"
 
 // other
 #import <ReactiveObjC/ReactiveObjC.h>

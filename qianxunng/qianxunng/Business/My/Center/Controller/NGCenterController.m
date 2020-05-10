@@ -1,29 +1,39 @@
 //
-//  NGMyController.m
+//  NGCenterController.m
 //  qianxunng
 //
 //  Created by lihuaqi on 2018/11/16.
 //  Copyright © 2018年 HQ. All rights reserved.
 //
 
-#import "NGMyController.h"
-#import "NGMyCenterHeadSC.h"
+#import "NGCenterController.h"
+#import "NGCenterHeadView.h"
 
-@interface NGMyController () <IGListAdapterDataSource>
+@interface NGCenterController () <IGListAdapterDataSource>
+@property (nonatomic, strong) NGCenterHeadView *headView;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) IGListAdapter *adapter;
 @property (nonatomic, strong) NSArray *data;
 
 @end
 
-@implementation NGMyController
+@implementation NGCenterController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self addNotif];
     [self setupNavigationBar];
     
     [self setupViews];
+}
+
+- (void)addNotif {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginChanged) name:kLoginStatusChanged object:nil];
+}
+
+- (void)loginChanged {
+    [self.adapter reloadDataWithCompletion:nil];
 }
 
 - (void)setupNavigationBar {
@@ -34,7 +44,7 @@
 
 #pragma mark - subviews
 - (void)setupViews {
-    self.view.backgroundColor = kBackgroundColor;
+    self.view.backgroundColor = [UIColor whiteColor];
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero
                                              collectionViewLayout:[UICollectionViewFlowLayout new]];
@@ -45,7 +55,9 @@
     self.adapter.collectionView = self.collectionView;
     self.adapter.dataSource = self;
     self.collectionView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+    self.collectionView.contentInset = UIEdgeInsetsMake([NGCenterHeadView headHeight], 0, 0, 0);
     [self.view addSubview:self.collectionView];
+    [self.view addSubview:self.headView];
 }
 
 #pragma mark - IGListAdapterDataSource
@@ -54,11 +66,18 @@
 }
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-    return [NGMyCenterHeadSC new];
+    return nil;
 }
 
 - (UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
     return nil;
+}
+
+- (NGCenterHeadView *)headView {
+    if (_headView == nil) {
+        _headView = [[NGCenterHeadView alloc] init];
+    }
+    return _headView;
 }
 
 - (void)didReceiveMemoryWarning {
